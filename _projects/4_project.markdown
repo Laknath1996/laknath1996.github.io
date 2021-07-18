@@ -1,78 +1,23 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: Computer Interfaced Non Invasive Photo-Plethysmographic Heart Rate Monitoring Device
+description: This project was presented in EXMO'17
+img: /assets/img/ppg.png
+importance: 1
+category: self-initiated projects
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The objective of the project was to come up with a device and visualization software that can monitor the heart rate, temporal variation of the heart rate and the level of oxygen saturation in the blood in an non invasive manner. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+The project was conducted by Ashwin de Silva and Sachini Hewage, initially for the Biomedical Engineering Section of EXMO'2017 Engineering and Technology Exhibition held at the University of Moratuwa. As hardware components of the device ATmega2560 chip and the Pulse Sensor Amped. For the software base, arduino IDE and Processing IDE was used. The coding was done in C++ with the use of arduino and processing libraries.
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The voltage signal from the sensor it was sampled at 500 Hertz and this was done with help of the timer0 interrupt in ATmega2560. A  pulse threshold was defined as half of the difference between the signals' maximum and the minimum levels. The pulse threshold would updates after every pulse. When the signal level rises above the threshold, a pulse was detected and a delay was imposed from the point of pulse detection to prevent the method from detecting the dicrotic notch as a new pulse. A 10 - element queue was implemented to store the Inter-Beat-Interval (IBI) values such that at the end of every pulse, the new IBI would be enqueued and the earliest value would be dequeued. At every pulse, the method would calculate the average of the IBIs in the queue and would calculate the Pulse Rate using average IBI. 
+
+Code    :   [[GitHub]](https://github.com/Laknath1996/PPG-Pulse-Meter) 
+
+Poster  :   [[Poster]](https://drive.google.com/open?id=1XWz-zU3tcR34xWFqzaA9KgB3U79EDTWl)
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/mOI8XzjkmrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```

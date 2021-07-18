@@ -2,10 +2,29 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Here's a list of courses I'm TA'ing/TA'ed.
 nav: true
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+**EN1060 Signals and Systems** <br>
+University of Moratuwa, 2021\
+Lecturer: Dr. Ranga Rodrigo
 
-Organize your courses by years, topics, or universities, however you like!
+**BM2101 Analysis of Physiological Systems** <br>
+University of Moratuwa, 2021\
+Lecturer(s): Dr. Anjula De Silva, Dr. Nuwan Dayananda
+
+**EN1093 Laboratory Practice (Signals and Systems)** <br>
+University of Moratuwa, 2021
+
+**EN3030 Circuits and Systems Design** <br> 
+University of Moratuwa, 2020\
+Lecturer: Dr. S. Thayaparan
+
+**EN2012 Analog Electronics** <br>
+University of Moratuwa, 2020
+
+**DE2410 Astronomy and Cosmology** <br>
+University of Moratuwa, 2018\
+Lecturer: Dr. S. Thayaparan
+
