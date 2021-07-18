@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: Short descriptions of research projects, internship projects, course projects, and self-initiated projects I have had the pleasure of working on!
 nav: true
-display_categories: [research, internships, undergrad course projects, self-initiated projects, fun, work]
+display_categories: [research, internships, undergrad course projects, self-initiated projects]
 horizontal: false
 ---
 <div class="projects">
