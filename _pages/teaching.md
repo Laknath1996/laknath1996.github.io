@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Here's a list of courses I'm TA'ing/TA'ed.
+description: Here's a list of courses I am TA'ing/have TA'ed.
 nav: true
 ---
 
