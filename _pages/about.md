@@ -16,9 +16,9 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am an incoming Biomedical Engineering PhD student in the Johns Hopkins University, MD, USA advised by Prof. [Joshua Vogelstein](https://neurodata.io/){:target="\_blank"}. I currently work as a Junior Lecturer in the Dept. of Electronics and Telecommunication Engineering, University of Moratuwa (UoM), Sri Lanka.
+My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a PhD student in the Johns Hopkins University, MD, USA advised by Prof. [Joshua Vogelstein](https://neurodata.io/){:target="\_blank"}, Prof. Carey Priebe and Dr. Pratik Chaudhari.
 
-I aspire to explore how our brains can inspire machine intelligence. Thus, I keep myself at an intersection of **machine learning**, **signal processing**, and **computational neuroscience**. My recent interests in ML could be narrowed down to *statistical machine learning*, *lifelong learning*, *geometric deep learning*, and *computer vision*.
+I aspire to work towards reducing the gap between machine and natural intelligences. My areas of interest include {deep, continual, statistical, geometric} learning, signal processing, computer vision, and computational neuroscience.
 
 I received my Bachelor's degree in Biomedical Engineering from UoM in 2020 while being ranked *1st among ~950 undergrads* in the Faculty of Engineering. I completed my thesis on *"Designing a Cost-Effective Dry Contact sEMG Sensor System for Controlling a Bionic Hand"* with Dr. [Simon Kappel](https://scholar.google.com/citations?user=HTFY3fsAAAAJ&hl=en) and Dr. [Thilina Lalitharatne](https://scholar.google.com/citations?user=0NvOK1kAAAAJ&hl=en).
 
@@ -26,7 +26,7 @@ I worked as a Research Assistant at the [Florey Institute of Neuroscience and Me
 
 I also worked with Dr. [Steffen Bollmann](https://scholar.google.com/citations?user=HmXlj24AAAAJ&hl=en) (Center for Advanced Imaging, University of Queensland, Australia) on developing fully convolutional networks to unwrap wrapped phase in QSM images.  
 
-In my free time, I like playing the piano, exploring restaurants, and watching numerous movies and TV shows involving science fiction, anime, and historical drama!
+In my free time, I love spending time my wife, playing the piano, exploring restaurants, and watching numerous movies and TV shows involving science fiction, anime, and historical drama!
 
 <!-- my twitter feed -->
 <!-- {% twitter https://twitter.com/AshwindeSilva1 maxwidth=500 limit=3 %} -->
