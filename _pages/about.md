@@ -16,7 +16,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a PhD student in the Johns Hopkins University, MD, USA advised by Prof. [Joshua Vogelstein](https://neurodata.io/){:target="\_blank"}, Prof. Carey Priebe and Dr. Pratik Chaudhari.
+My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a PhD student in the Johns Hopkins University, MD, USA advised by Dr. [Joshua Vogelstein](https://neurodata.io/){:target="\_blank"}, Dr. Pratik Chaudhari and Dr. Carey Priebe.
 
 I aspire to work towards reducing the gap between machine and natural intelligences. My areas of interest include {deep, continual, statistical, geometric} learning, signal processing, computer vision, and computational neuroscience.
 
