@@ -11,6 +11,24 @@ For my CV, click [here]({{site.baseurl}}/assets/pdf/Ashwin_CV.pdf).
 ## Education
 -------------
 
+### Johns Hopkins University (2021-Present)
+
+* PhD Student
+* `Dept` Department of Biomedical Engineering (currently ranked 1st in the world by US News and World Report)
+
+* `Coursework`
+    * **Applied Mathematics and Statistics**
+
+        Probability, Statistics, Non-linear Optimization, Pattern Recognition (Theory and Methods)
+
+    * **School of Medicine**
+
+        Brain, Mind & Behavior
+
+    * **Research**
+
+        Neuro Data Design I and II
+
 ### University of Moratuwa (2016-2021)
 
 * `Degree` B.Sc Engineering (Hons) specialized in Biomedical Engineering
