@@ -6,12 +6,12 @@ description: Highlights of my career, education, and services.
 nav: true
 ---
 
-For my CV, click [here]({{site.baseurl}}/assets/pdf/Ashwin_CV.pdf).
+<!-- For my CV, click [here]({{site.baseurl}}/assets/pdf/Ashwin_CV.pdf). -->
 
 <div style="margin-left: auto;margin-right: auto;">
-    <object data="https://github.com/Laknath1996/Curriculum-Vitae/blob/main/Curriculum%20Vitae%20for%20Researchers/main.pdf" type="application/pdf" width="825px" height="1175px">
-        <embed src="https://github.com/Laknath1996/Curriculum-Vitae/blob/main/Curriculum%20Vitae%20for%20Researchers/main.pdf">
-            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/Laknath1996/Curriculum-Vitae/blob/main/Curriculum%20Vitae%20for%20Researchers/main.pdf">Download PDF</a>.</p>
+    <object data="..\assets\pdf\main.pdf" type="application/pdf" width="825px" height="1175px">
+        <embed src="..\assets\pdf\main.pdf">
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="assets\pdf\main.pdf">Download PDF</a>.</p>
         </embed>
     </object>
 </div>
