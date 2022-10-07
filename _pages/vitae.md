@@ -8,9 +8,7 @@ nav: true
 
 For my CV, click [here]({{site.baseurl}}/assets/pdf/Ashwin_CV.pdf).
 
-<body style="width:100%; height:100%; margin:0;">
-   <iframe src="http://docs.google.com/gview?url=https://github.com/Laknath1996/Curriculum-Vitae/blob/main/Curriculum%20Vitae%20for%20Researchers/main.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
-</body>
+<iframe src="http://docs.google.com/gview?url=https://github.com/Laknath1996/Curriculum-Vitae/blob/main/Curriculum%20Vitae%20for%20Researchers/main.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>
 
 ## Education
 -------------
