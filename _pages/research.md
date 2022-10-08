@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: Short descriptions of research projects, internship projects, course projects, and self-initiated projects I have had the pleasure of working on!
+title: research
+permalink: /research/
+description: Short descriptions of research projects, internship projects, course projects, and self-initiated projects.
 nav: true
 display_categories: [research, internships, undergrad course projects, self-initiated projects]
 horizontal: false
