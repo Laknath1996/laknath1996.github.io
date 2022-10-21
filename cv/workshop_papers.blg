@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: workshop_papers.aux
 The style file: plainyrrev.bst
 Database file #1: workshop_papers.bib
-You've used 1 entry,
+You've used 2 entries,
             2156 wiz_defined-function locations,
-            512 strings with 4330 characters,
-and the built_in function-call counts, 388 in all, are:
-= -- 31
-> -- 31
+            515 strings with 4426 characters,
+and the built_in function-call counts, 766 in all, are:
+= -- 62
+> -- 62
 < -- 0
-+ -- 13
-- -- 11
-* -- 26
-:= -- 79
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 8
++ -- 26
+- -- 22
+* -- 52
+:= -- 149
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 16
 chr.to.int$ -- 0
 cite$ -- 0
-duplicate$ -- 13
-empty$ -- 23
-format.name$ -- 11
-if$ -- 72
+duplicate$ -- 26
+empty$ -- 46
+format.name$ -- 22
+if$ -- 144
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 6
-num.names$ -- 3
-pop$ -- 12
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 11
+num.names$ -- 6
+pop$ -- 24
 preamble$ -- 0
-purify$ -- 7
+purify$ -- 14
 quote$ -- 0
-skip$ -- 7
+skip$ -- 15
 stack$ -- 0
-substring$ -- 6
-swap$ -- 2
+substring$ -- 12
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 8
 warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 12
+while$ -- 6
+width$ -- 3
+write$ -- 24
