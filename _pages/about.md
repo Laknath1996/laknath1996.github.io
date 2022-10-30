@@ -26,7 +26,7 @@ I have worked as a Research Assistant at the [Florey Institute of Neuroscience a
 
 I have worked with Dr. [Steffen Bollmann](https://scholar.google.com/citations?user=HmXlj24AAAAJ&hl=en) (Center for Advanced Imaging, University of Queensland, Australia) on developing fully convolutional networks to unwrap wrapped phase in QSM images.  
 
-Outside work, I love spending time my wife, playing the piano, hiking, and trying out new recipes. I am an avid fan of astronomy, history, science-fiction, fantasy, and anime!
+Outside work, I love spending time with my wife, playing the piano, hiking, and trying out new recipes. I am an avid fan of astronomy, history, science-fiction, fantasy, and anime!
 
 <!-- my twitter feed -->
 <!-- {% twitter https://twitter.com/AshwindeSilva1 maxwidth=500 limit=3 %} -->
