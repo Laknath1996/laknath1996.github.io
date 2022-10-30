@@ -1,3 +1,12 @@
+# To-do
+
+* add company logos (places I've worked, collaborated, and studied)
+* add selected talks
+* add a link to a flikr page (photos)
+* add a teaser image for the pubs
+* add project pages for projects
+* make the news scroll-able
+
 # al-folio
 
 [![build status](https://travis-ci.org/alshedivat/al-folio.svg?branch=master)](https://travis-ci.org/alshedivat/al-folio)
