@@ -12,7 +12,7 @@ horizontal: false
 
 * Working on optimal and private transfer learning for physiological predictive systems **(Advisor : Dr. Carey Priebe, a collaboration with Microsoft Research)**
 * Explored the value of out-of-distribution data in generalizing to an in-distribution target task **(Advisors : Dr. Joshua Vogelstein, Dr. Pratik Chaudhari, a collaboration with UPenn)**
-* Developed Kernel Density Networks (KDNs) with the aim of overcoming the overconfident problem in neural networks (Advisor : Dr. Joshua Vogelstein)
+* Developed Kernel Density Networks (KDNs) with the aim of overcoming the overconfident problem in neural networks **(Advisor : Dr. Joshua Vogelstein)**
  
 ### University of Moratuwa, Sri Lanka (2016-2021)
 

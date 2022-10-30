@@ -16,7 +16,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Hello there! My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a second-year PhD student in the Department of Biomedical Engineering at Johns Hopkins University, where I am fortunate to be advised by Dr. Joshua Vogelstein and co-advised by Dr. Carey E. Priebe (JHU) and Dr. Pratik Chaudhari (UPenn).
+Hello there! My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a second-year PhD student in the Department of Biomedical Engineering at Johns Hopkins University, where I am fortunate to be advised by Dr. [Joshua Vogelstein](https://scholar.google.com/citations?user=DWPfdT4AAAAJ&hl=en) and co-advised by Dr. [Pratik Chaudhari](https://scholar.google.com/citations?user=c_z5hWEAAAAJ&hl=en) (UPenn) and Dr. [Carey E. Priebe](https://scholar.google.com/citations?user=clTVC4UAAAAJ&hl=en) (JHU).
 
 I aspire to work towards reducing the gap between machine and natural intelligences. My research primarily focuses on building deep learning and statistical machine learning theory and methods for out-of-distribution (OOD) generalization and continually learning systems. Additionally, I have a keen interest in computational neuroscience, computer vision, geometric deep learning, signal processing, and biomedical data science.
 
