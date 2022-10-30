@@ -8,8 +8,6 @@ display_categories: [research, internships, undergrad course projects, self-init
 horizontal: false
 ---
 
-## Summary
-
 ### Johns Hopkins University, MD, USA (2021-Present)
 
 * Working on optimal and private transfer learning for physiological predictive systems (Advisor : Dr. Carey Priebe, a collaboration with Microsoft Research)
@@ -33,7 +31,8 @@ horizontal: false
 * Developed MEACON, a software aimed at determining whether the ion channel mutations cause changes to the connectivity patterns of in-vitro neuronal networks by modeling them as time varying graphs based on high density 120-channel MEA signals. (Advisors: Prof. Steve Petrou, Dr. Andre Peterson)
 * Developed software to visualize MEA spike trains and perform time series analysis of MEA parameters (Advisors: Prof. Steve Petrou, Prof. Saman Halgamuge)
 
-## Research Projects
+-----------------
+## Project Pages
 
 <div class="projects">
   {% if site.enable_project_categories and page.display_categories %}
