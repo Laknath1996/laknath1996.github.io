@@ -11,7 +11,7 @@
   Laknath Ashwin De Silva
 
 
-  | blog
+  | A Vessel Extraction Framework for Retinal and Conjunctival Vascular Tortuosity Analysis
 
 </title>
 <meta name="description" content="Personal web of Laknath Ashwin De Silva.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐴</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/8_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -101,18 +101,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -189,30 +185,177 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Ashwin's Space</h1>
-    <h2>Some of my thoughts, experiences, and realizations</h2>
+  <header class="post-header">
+    <h1 class="post-title">A Vessel Extraction Framework for Retinal and Conjunctival Vascular Tortuosity Analysis</h1>
+    <p class="post-description">A self-initiated research project.</p>
+  </header>
+
+  <article>
+    <p>In this research we analysed the association of retinal and conjunctival vascular tortuosity with diabetes. Previous studies in the literature suggests that the vascular tortuosity is a bio marker for any systemic diseases and these studies also suggests that the vascular tortuosity varies with the thickness of the vessels. This creates a need of a framework that can extract vessels of a desired thickness. To this end, we propose a framework that can extract vessels of specified thicknesses from retinal fundus images or external eye images. The proposed framework consist of a vessel probability map generation step followed by few post processing steps. The vessel probability maps are obtained using fully convolutional neural network architecture; Iternet which is trained separately to obtain vessel probability maps for retinal and external eye images. The vessels of desired thicknesses are extracted using the generated vessel probability maps and a hessian based multiscale vessel enhancement techniques. The extracted vessels were skeletonized and tortuosity was computed using several tortuosity indices. These calculated tortuosity values were used to analyze the association of diabetes with retinal and conjunctival vascular tortuosities. (Description was kindly provided by my ❤️<a href="https://malshav.github.io/">Malsha</a>)</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/tor.png" alt="" title="example image" />
+    </div>
+</div>
+<div class="caption">
+    The prpose thickness-sensitive retinal/ conjunctival vessel extraction framework
+</div>
+
+<h3 id="publications">Publications</h3>
+<hr />
+
+<div class="publications">
+  <ol class="bibliography"><li><div class="row">
+  <div class="col-sm-2 abbr">
+  
+    
+    <abbr class="badge">[P]</abbr>
+    
+  
   </div>
 
-
-  <ul class="post-list">
+  <div id="desilva2021thickness" class="col-sm-8">
     
-      <li>
-        <h3><a class="post-title" href="/blog/2022/phd_app/">PhD Application FAQs (work in progress)</a></h3>
-        <p class="post-meta">October 28, 2022</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/importing-gdrive-in-colab/">How to use Google Colaboratory to clone a GitHub Repository to your Google Drive?</a></h3>
-        <p class="post-meta">May 14, 2019</p>
-        <p></p>
-      </li>
-    
-  </ul>
+      <div class="title">A Thickness Sensitive Vessel Extraction Framework for Retinal and Conjunctival Vascular Tortuosity Analysis</div>
+      <div class="author">
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                <em>De Silva, Ashwin*</em>,
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Perera, Malsha V.*,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Wijethilake, Navodini,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Jayasinghe, Saroj,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  Nanayakkara, Nuwan D.,
+                
+              
+            
+          
+        
+          
+          
+          
+          
+          
+          
+            
+              
+                
+                  and De Silva, Anjula
+                
+              
+            
+          
+        
+      </div>
 
-  
+      <div class="periodical">
+      
+      
+        2021
+      
+      </div>
+    
 
+    <div class="links">
+    
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+    
+    
+      <a href="http://arxiv.org/abs/2101.00435" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
+    
+    
+    
+    
+      
+      <a href="/assets/pdf/2020_4.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+
+    <!-- Hidden abstract block -->
+    
+    <div class="abstract hidden">
+      <p>Systemic diseases such as diabetes, hypertension, atherosclerosis are among the leading causes of annual human mortality rate. It is suggested that retinal and conjunctival vascular tortuosity is a potential biomarker for such systemic diseases. Most importantly, it is observed that the tortuosity depends on the thickness of these vessels. Therefore, selective calculation of tortuosity within specific vessel thicknesses is required depending on the disease being analysed. In this paper, we propose a thickness sensitive vessel extraction framework that is primarily applicable for studies related to retinal and conjunctival vascular tortuosity. The framework uses a Convolutional Neural Network based on the IterNet architecture to obtain probability maps of the entire vasculature. They are then processed by a multi-scale vessel enhancement technique that exploits both fine and coarse structural vascular details of these probability maps in order to extract vessels of specified thicknesses. We evaluated the proposed framework on four datasets including DRIVE and SBVPI, and obtained Matthew’s Correlation Coefficient values greater than 0.71 for all the datasets. In addition, the proposed framework was utilized to determine the association of diabetes with retinal and conjunctival vascular tortuosity. We observed that retinal vascular tortuosity (Eccentricity based Tortuosity Index) of the diabetic group was significantly higher (p &lt; .05) than that of the non-diabetic group and that conjunctival vascular tortuosity (Total Curvature normalized by Arc Length) of diabetic group was significantly lower (p &lt; .05) than that of the non-diabetic group. These observations were in agreement with the literature, strengthening the suitability of the proposed framework.</p>
+    </div>
+    
+
+    <!-- Hidden bibtex block -->
+    
+  </div>
+</div>
+</li></ol>
+</div>
+
+  </article>
 
 </div>
 

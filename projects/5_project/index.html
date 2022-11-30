@@ -11,7 +11,7 @@
   Laknath Ashwin De Silva
 
 
-  | blog
+  | Fully Analog Autonomous Line Following Robot
 
 </title>
 <meta name="description" content="Personal web of Laknath Ashwin De Silva.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐴</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/5_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -101,18 +101,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -189,30 +185,26 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Ashwin's Space</h1>
-    <h2>Some of my thoughts, experiences, and realizations</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Fully Analog Autonomous Line Following Robot</h1>
+    <p class="post-description">A course project in EN2090 Laboratory Practice</p>
+  </header>
+
+  <article>
+    <p>Fully analog autonomous line follower robot was developed as a group project for the module EN2090. The objective was to implement the PID algorithm and Pulse Width Modulation using analog components.</p>
+
+<p>A sensor panel comprised of 4 pairs of high intensity LEDs and LDRs was used. For each sensor input a specific weight was applied such that when the robot is moving along a straight white line in a black background the sum of all the weighted input signals is equal to zero. If a robot encounters a turn the summation would become non zero thus generating an error. This error was fed in to the PID circuit to generate the error signal. The error signal then is added/ subtracted from the motor base voltages depending on the correction requirement of the Robot in order to follow the line. These motor voltages are then passed down to the comparator together with the triangular wave coming from the triangular wave generator circuit to generate the PWM signal that would drive the motors. The PWM signal is passed through the transistors and fed in to the respective motors, thus making the correction to the robot’s trajectory.</p>
+
+<p>Report  :   <a href="https://drive.google.com/open?id=1b5UxT9wwt_pV0F6SC4BJM60UuxMRrZad">[Report]</a></p>
+
+<p>Grade   :   4.2/4.2</p>
+
+<p>Supervisor(s)   :   Mr. Lahiru Chamain, Mr. Didula Dissanayaka</p>
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/sUkAM-0J3dk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2022/phd_app/">PhD Application FAQs (work in progress)</a></h3>
-        <p class="post-meta">October 28, 2022</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/importing-gdrive-in-colab/">How to use Google Colaboratory to clone a GitHub Repository to your Google Drive?</a></h3>
-        <p class="post-meta">May 14, 2019</p>
-        <p></p>
-      </li>
-    
-  </ul>
-
-  
-
+  </article>
 
 </div>
 

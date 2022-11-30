@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Laknath Ashwin De Silva
+
+
+  | How to use Google Colaboratory to clone a GitHub Repository to your Google Drive?
+
+</title>
+<meta name="description" content="Personal web of Laknath Ashwin De Silva.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐴</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/blog/2019/importing-gdrive-in-colab/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Laknath</span> Ashwin  De Silva
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/research/">
+                research
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/vitae/">
+                vitae
+                
+              </a>
+          </li>
+          
+          
+          
+            <div class = "toggle-container">
+              <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">How to use Google Colaboratory to clone a GitHub Repository to your Google Drive?</h1>
+    <p class="post-meta">May 14, 2019</p>
+  </header>
+
+  <article class="post-content">
+    <p>If you are working with a deep learning project, the greatest bottleneck could be the lack of computational resources (e.g a GPU). But with Google Colaboratory (Google Colab or Colab in short), now you have the freedom to use a GPU at your disposal. Let’s see how you can clone your GitHub repository into the Google Drive and run your code on top of a GPU provided by Google Colab. Here are some tips before you get in to Colab.</p>
+
+<ul>
+  <li>
+    <p>First, you have to get your scripts ready. For scripting, you can use an IDE such as PyCharm, Visual Code or Spyder.</p>
+  </li>
+  <li>
+    <p>When scripting, it is a good practice to properly space the codes and add comments whenever it is necessary.</p>
+  </li>
+  <li>
+    <p>You can arrange your scripts in different folders according to the tasks that they execute. (e.g : The scripts which incudes functions that carry out general utilities file handling, accuracy metrics, plotting etc, can be included in a folder called <code class="language-plaintext highlighter-rouge">utilities</code>. The scripts which are responsible for defining the deep learning model can be included in a folder called ‘model’).</p>
+  </li>
+  <li>
+    <p>You can further include a <code class="language-plaintext highlighter-rouge">datasets</code> and a <code class="language-plaintext highlighter-rouge">models</code> folder inside your project directory. The <code class="language-plaintext highlighter-rouge">datasets</code> folder can be used to store the datasets while the <code class="language-plaintext highlighter-rouge">models</code> folder can be used to save the deep learning models that you would be training. You can also have a <code class="language-plaintext highlighter-rouge">logs</code> folder to save the log files if you are using tensorboard to monitor the training progress.</p>
+  </li>
+  <li>
+    <p>It would be convenient to save the datasets that you would be using in your deep learning project as <code class="language-plaintext highlighter-rouge">.hdf5</code> files. Within a <code class="language-plaintext highlighter-rouge">.hdf5</code> file, you can save many different datasets. For example, let’s assume that you are working on a segmentation task and you have a dataset of images and the corresponding ground truth masks. You can first divide the original dataset in to a train set, a validation set and a test set and save the images and masks for each of the train, validation and test set separately in the <code class="language-plaintext highlighter-rouge">.hdf5</code> file. This way you can have <code class="language-plaintext highlighter-rouge">train_images</code>, <code class="language-plaintext highlighter-rouge">train_masks</code>, <code class="language-plaintext highlighter-rouge">val_images</code>, <code class="language-plaintext highlighter-rouge">val_masks</code>, <code class="language-plaintext highlighter-rouge">test_images</code> and <code class="language-plaintext highlighter-rouge">test_masks</code> within a single <code class="language-plaintext highlighter-rouge">.hdf5</code> file. Having all of them under a single roof would be convenient when you load data in your code.</p>
+  </li>
+</ul>
+
+<p>After the scripts and the datasets are ready, you can push the scripts to the GitHub repository. When pushing the project folder to the Git repo make sure that you do not push the dataset files (basically any large file) to it. We’ll see how we can deal with the dataset files later.</p>
+
+<p>After you have pushed the project folder (without the dataset files) to the GitHub repo, you can go to your google drive and create a new folder (let’s call it the <code class="language-plaintext highlighter-rouge">project_folder</code>) to include your project related folders and files.</p>
+
+<p>Access the <code class="language-plaintext highlighter-rouge">project_folder</code>. Right click on the background and select ‘colaboratory’ from the ‘more’ option in the dropdown menu that appears with the right click.</p>
+
+<p>This will open a colab tab in your browser. You can change the name of the colab file in its top left corner. Next we have to connect to a GPU runtime. To do this, first go to the ‘Runtime’ menu in the menubar and select ‘Reset All Runtimes’. Then in the same menu, select the ‘Change Runtime Type’ option. Select the ‘GPU’ option under the ‘hardware accelerator’ field in the dialog box that appears and click ‘save’.</p>
+
+<p>Now, you can click the button that says ‘connect’ in the top right corner of the page. This would allocate, initialize and connect you to a GPU runtime.</p>
+
+<p>Since we plan to store our porject realted files in the project_folder we created earlier, we have to mount our google drive in to this runtime. In order to do that, type in the following in the first cell of your colab and run the cell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from google.colab import drive
+drive.mount('/content/gdrive')
+</code></pre></div></div>
+
+<p>This would prompt a URL with an authentication code. After you insert that authentication code in the provided space, your google drive will be mounted. You can check the contents of the current folder in the runtime by typing the following and running the cell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! ls
+</code></pre></div></div>
+
+<p>If the drive is mounted correcly, you would see that the current folder has a directory called <code class="language-plaintext highlighter-rouge">gdrive</code>. This is where you can find your googlde drive contents. Now, to access the <code class="language-plaintext highlighter-rouge">project_folder</code> we created earlier, type in the following and run the cell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%cd gdrive/My Drive/project_folder
+</code></pre></div></div>
+
+<p>Since we are now in the <code class="language-plaintext highlighter-rouge">project_folder</code> we created earlier in the google drive, we can clone our GitHub repository inside this folder. For that, type in the following and run the cell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! git clone link/to/your/repo
+</code></pre></div></div>
+
+<p>Now you have successfully cloned your repository in to the google drive. For pulling the changes from the repository, you can use the following command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! git pull
+</code></pre></div></div>
+
+<p>You might want to install python libraries in the runtime to successfully execute your code. For that, you can use the following command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! pip install &lt;desired-python-library&gt;
+</code></pre></div></div>
+
+<p>Finally, you have to upload the datasets to the drive first. It is fairly simple as all what you have to do is, to upload the dataset file inside the the <code class="language-plaintext highlighter-rouge">datasets</code> folder under the clone repository. (There is no rule dictating that you should upload it to a folder inside the cloned repo. You can upload it anywhere inside the <code class="language-plaintext highlighter-rouge">project_folder</code> as long it is easily referenced and acceesible)
+If the dataset is downloadable as a compressed file, you can download it to your computer, uncompress it and upload the extractions to the <code class="language-plaintext highlighter-rouge">project_folder</code> in the google drive.
+When you need to access a dataset that is stored in a GitHub repository, you can clone it inside the <code class="language-plaintext highlighter-rouge">project_folder</code> using the following.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! git clone link/to/the/dataset/repo
+</code></pre></div></div>
+
+<p>If you have an executable python file inside the cloned repo, you can run it using the following command after accessing the directory with that executable file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! python &lt;executable_file.py&gt;
+</code></pre></div></div>
+
+<p>Or else you can execute code directly from the colab cells. But first, you will have to import the functions from your git repo that are required for the execution. For example, let’s assume that you want to access a datset and the relavent functions are saved in a python file called <code class="language-plaintext highlighter-rouge">file_handling.py</code> under the subfolder <code class="language-plaintext highlighter-rouge">utilities</code> in the cloned repo. To import these functions you can use the following code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from utilities.file_handling import *
+</code></pre></div></div>
+
+<p>After importing the necessities, you can execute commands in the cells like you do in a python interative shell.</p>
+
+<p>When the runtime restarts, the mounted drive would be dismounted. Therefore, each time you restart the runtime, you will have to mount the drive back again in the runtime. To save yourself from typing in the commands again and again, you can include the following command bundle in a separate cell. This would mount the drive, access the repo folder and pull the changes that you committed.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from google.colab import drive
+drive.mount('/content/gdrive')
+%cd gdrive/My Drive/project_folder/cloned_repo_folder
+! git pull
+</code></pre></div></div>
+
+<p>That winds up this article. Happy coding in Colab! Let me know your questions in the comments.</p>
+
+  </article>
+
+  
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname  = 'al-folio';
+      var disqus_identifier = '/blog/2019/importing gdrive in colab';
+      var disqus_title      = "How to use Google Colaboratory to clone a GitHub Repository to your Google Drive?";
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2022 Laknath Ashwin De Silva.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>

@@ -11,7 +11,7 @@
   Laknath Ashwin De Silva
 
 
-  | blog
+  | Custom Processor Implemented on FPGA for Image Downsampling
 
 </title>
 <meta name="description" content="Personal web of Laknath Ashwin De Silva.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐴</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/2_project/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -101,18 +101,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -189,30 +185,27 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Ashwin's Space</h1>
-    <h2>Some of my thoughts, experiences, and realizations</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Custom Processor Implemented on FPGA for Image Downsampling</h1>
+    <p class="post-description">A course project in EN3030 Circuits and Systems Design</p>
+  </header>
 
+  <article>
+    <p>Field Programmable Gate Array is a versatile platform for digital design. In this course project, a custom built processor was developed on FPGA in order to downsample an image.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2022/phd_app/">PhD Application FAQs (work in progress)</a></h3>
-        <p class="post-meta">October 28, 2022</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/importing-gdrive-in-colab/">How to use Google Colaboratory to clone a GitHub Repository to your Google Drive?</a></h3>
-        <p class="post-meta">May 14, 2019</p>
-        <p></p>
-      </li>
-    
-  </ul>
+<p>The algorithm was first designed and simulated on MATLAB to verify its credibility.Then the processor requirements such as the number of registers, buses, data memory size, instruction memory size, word sizes etc was determined alongside with the Instruction Set Architecture (ISA) and the Assembly codes. After the processor specifications were fixed the coding was completed using Verilog HDL which was followed by debugging and testing on hardware.</p>
 
-  
+<p>An RS232 cable (UART based) was used to establish the communication between the PC and the FPGA. Python scripts were used to mediate the data transmitting and data receiving.</p>
 
+<p>Report  :   <a href="https://drive.google.com/open?id=1xgl0GBk0ieSggIGnXlHOPpIifrswnAO-">[Report]</a></p>
+
+<p>Grade   :   4.2/4.2</p>
+
+<p>Code    :   <a href="https://github.com/Laknath1996/Image-Downsampling-Processor-Design">[GitHub]</a></p>
+
+<iframe width="480" height="270" src="https://www.youtube.com/embed/ZEHNLUbt3R4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+  </article>
 
 </div>
 

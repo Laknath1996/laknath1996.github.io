@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-11-30T21:46:06+00:00</updated><id>/feed.xml</id><title type="html">blank</title><subtitle>Personal web of Laknath Ashwin De Silva.
+</subtitle><entry><title type="html">PhD Application FAQs (work in progress)</title><link href="/blog/2022/phd_app/" rel="alternate" type="text/html" title="PhD Application FAQs (work in progress)" /><published>2022-10-28T15:59:00+00:00</published><updated>2022-10-28T15:59:00+00:00</updated><id>/blog/2022/phd_app</id><content type="html" xml:base="/blog/2022/phd_app/"><![CDATA[<p>Many folks have reached out to me regarding questions about PhD applications in the recent past, and I intend this article to be a gross summary of my answers to these FAQs. The content of the answers are mostly based on our own experience and that of our friends, colleagues, and mentors. While these answers may generally be useful for any focus area, some may tend to be specific for fields such as computer science, biomedical engineering, and electronics &amp; telcom engineering.</p>
+
+<p><strong>How do I select a focus area for my PhD?</strong></p>
+
+<p><strong>Do I need research artifacts to apply for a PhD?</strong></p>
+
+<p><strong>Does the GPA matter?</strong></p>
+
+<p><strong>How do I find an advisor/an institute that matches with my liking?</strong></p>
+
+<p><strong>How many schools should I apply to?</strong></p>
+
+<p><strong>How should I structure my statement of purpose (SoP)?</strong></p>
+
+<p><strong>How should I ask my referees to write letters of recommendation (LoR) for me?</strong></p>
+
+<p><strong>What is your opinion about US, European, and Australian PhDs?</strong></p>
+
+<p><strong>When should I sit for GRE and TOFEL/IELTS?</strong></p>
+
+<p><strong>Should I write to my potential PhD advisors?</strong></p>
+
+<p><strong>What are the resources provided by universities to assist their prospective graduate students?</strong></p>
+
+<p><strong>How to stay undisturbed by the paradox of choices?</strong></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Many folks have reached out to me regarding questions about PhD applications in the recent past, and I intend this article to be a gross summary of my answers to these FAQs. The content of the answers are mostly based on our own experience and that of our friends, colleagues, and mentors. While these answers may generally be useful for any focus area, some may tend to be specific for fields such as computer science, biomedical engineering, and electronics &amp; telcom engineering.]]></summary></entry><entry><title type="html">How to use Google Colaboratory to clone a GitHub Repository to your Google Drive?</title><link href="/blog/2019/importing-gdrive-in-colab/" rel="alternate" type="text/html" title="How to use Google Colaboratory to clone a GitHub Repository to your Google Drive?" /><published>2019-05-14T15:59:00+00:00</published><updated>2019-05-14T15:59:00+00:00</updated><id>/blog/2019/importing%20gdrive%20in%20colab</id><content type="html" xml:base="/blog/2019/importing-gdrive-in-colab/"><![CDATA[<p>If you are working with a deep learning project, the greatest bottleneck could be the lack of computational resources (e.g a GPU). But with Google Colaboratory (Google Colab or Colab in short), now you have the freedom to use a GPU at your disposal. Let’s see how you can clone your GitHub repository into the Google Drive and run your code on top of a GPU provided by Google Colab. Here are some tips before you get in to Colab.</p>
+
+<ul>
+  <li>
+    <p>First, you have to get your scripts ready. For scripting, you can use an IDE such as PyCharm, Visual Code or Spyder.</p>
+  </li>
+  <li>
+    <p>When scripting, it is a good practice to properly space the codes and add comments whenever it is necessary.</p>
+  </li>
+  <li>
+    <p>You can arrange your scripts in different folders according to the tasks that they execute. (e.g : The scripts which incudes functions that carry out general utilities file handling, accuracy metrics, plotting etc, can be included in a folder called <code class="language-plaintext highlighter-rouge">utilities</code>. The scripts which are responsible for defining the deep learning model can be included in a folder called ‘model’).</p>
+  </li>
+  <li>
+    <p>You can further include a <code class="language-plaintext highlighter-rouge">datasets</code> and a <code class="language-plaintext highlighter-rouge">models</code> folder inside your project directory. The <code class="language-plaintext highlighter-rouge">datasets</code> folder can be used to store the datasets while the <code class="language-plaintext highlighter-rouge">models</code> folder can be used to save the deep learning models that you would be training. You can also have a <code class="language-plaintext highlighter-rouge">logs</code> folder to save the log files if you are using tensorboard to monitor the training progress.</p>
+  </li>
+  <li>
+    <p>It would be convenient to save the datasets that you would be using in your deep learning project as <code class="language-plaintext highlighter-rouge">.hdf5</code> files. Within a <code class="language-plaintext highlighter-rouge">.hdf5</code> file, you can save many different datasets. For example, let’s assume that you are working on a segmentation task and you have a dataset of images and the corresponding ground truth masks. You can first divide the original dataset in to a train set, a validation set and a test set and save the images and masks for each of the train, validation and test set separately in the <code class="language-plaintext highlighter-rouge">.hdf5</code> file. This way you can have <code class="language-plaintext highlighter-rouge">train_images</code>, <code class="language-plaintext highlighter-rouge">train_masks</code>, <code class="language-plaintext highlighter-rouge">val_images</code>, <code class="language-plaintext highlighter-rouge">val_masks</code>, <code class="language-plaintext highlighter-rouge">test_images</code> and <code class="language-plaintext highlighter-rouge">test_masks</code> within a single <code class="language-plaintext highlighter-rouge">.hdf5</code> file. Having all of them under a single roof would be convenient when you load data in your code.</p>
+  </li>
+</ul>
+
+<p>After the scripts and the datasets are ready, you can push the scripts to the GitHub repository. When pushing the project folder to the Git repo make sure that you do not push the dataset files (basically any large file) to it. We’ll see how we can deal with the dataset files later.</p>
+
+<p>After you have pushed the project folder (without the dataset files) to the GitHub repo, you can go to your google drive and create a new folder (let’s call it the <code class="language-plaintext highlighter-rouge">project_folder</code>) to include your project related folders and files.</p>
+
+<p>Access the <code class="language-plaintext highlighter-rouge">project_folder</code>. Right click on the background and select ‘colaboratory’ from the ‘more’ option in the dropdown menu that appears with the right click.</p>
+
+<p>This will open a colab tab in your browser. You can change the name of the colab file in its top left corner. Next we have to connect to a GPU runtime. To do this, first go to the ‘Runtime’ menu in the menubar and select ‘Reset All Runtimes’. Then in the same menu, select the ‘Change Runtime Type’ option. Select the ‘GPU’ option under the ‘hardware accelerator’ field in the dialog box that appears and click ‘save’.</p>
+
+<p>Now, you can click the button that says ‘connect’ in the top right corner of the page. This would allocate, initialize and connect you to a GPU runtime.</p>
+
+<p>Since we plan to store our porject realted files in the project_folder we created earlier, we have to mount our google drive in to this runtime. In order to do that, type in the following in the first cell of your colab and run the cell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from google.colab import drive
+drive.mount('/content/gdrive')
+</code></pre></div></div>
+
+<p>This would prompt a URL with an authentication code. After you insert that authentication code in the provided space, your google drive will be mounted. You can check the contents of the current folder in the runtime by typing the following and running the cell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! ls
+</code></pre></div></div>
+
+<p>If the drive is mounted correcly, you would see that the current folder has a directory called <code class="language-plaintext highlighter-rouge">gdrive</code>. This is where you can find your googlde drive contents. Now, to access the <code class="language-plaintext highlighter-rouge">project_folder</code> we created earlier, type in the following and run the cell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%cd gdrive/My Drive/project_folder
+</code></pre></div></div>
+
+<p>Since we are now in the <code class="language-plaintext highlighter-rouge">project_folder</code> we created earlier in the google drive, we can clone our GitHub repository inside this folder. For that, type in the following and run the cell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! git clone link/to/your/repo
+</code></pre></div></div>
+
+<p>Now you have successfully cloned your repository in to the google drive. For pulling the changes from the repository, you can use the following command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! git pull
+</code></pre></div></div>
+
+<p>You might want to install python libraries in the runtime to successfully execute your code. For that, you can use the following command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! pip install &lt;desired-python-library&gt;
+</code></pre></div></div>
+
+<p>Finally, you have to upload the datasets to the drive first. It is fairly simple as all what you have to do is, to upload the dataset file inside the the <code class="language-plaintext highlighter-rouge">datasets</code> folder under the clone repository. (There is no rule dictating that you should upload it to a folder inside the cloned repo. You can upload it anywhere inside the <code class="language-plaintext highlighter-rouge">project_folder</code> as long it is easily referenced and acceesible)
+If the dataset is downloadable as a compressed file, you can download it to your computer, uncompress it and upload the extractions to the <code class="language-plaintext highlighter-rouge">project_folder</code> in the google drive.
+When you need to access a dataset that is stored in a GitHub repository, you can clone it inside the <code class="language-plaintext highlighter-rouge">project_folder</code> using the following.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! git clone link/to/the/dataset/repo
+</code></pre></div></div>
+
+<p>If you have an executable python file inside the cloned repo, you can run it using the following command after accessing the directory with that executable file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>! python &lt;executable_file.py&gt;
+</code></pre></div></div>
+
+<p>Or else you can execute code directly from the colab cells. But first, you will have to import the functions from your git repo that are required for the execution. For example, let’s assume that you want to access a datset and the relavent functions are saved in a python file called <code class="language-plaintext highlighter-rouge">file_handling.py</code> under the subfolder <code class="language-plaintext highlighter-rouge">utilities</code> in the cloned repo. To import these functions you can use the following code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from utilities.file_handling import *
+</code></pre></div></div>
+
+<p>After importing the necessities, you can execute commands in the cells like you do in a python interative shell.</p>
+
+<p>When the runtime restarts, the mounted drive would be dismounted. Therefore, each time you restart the runtime, you will have to mount the drive back again in the runtime. To save yourself from typing in the commands again and again, you can include the following command bundle in a separate cell. This would mount the drive, access the repo folder and pull the changes that you committed.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from google.colab import drive
+drive.mount('/content/gdrive')
+%cd gdrive/My Drive/project_folder/cloned_repo_folder
+! git pull
+</code></pre></div></div>
+
+<p>That winds up this article. Happy coding in Colab! Let me know your questions in the comments.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[If you are working with a deep learning project, the greatest bottleneck could be the lack of computational resources (e.g a GPU). But with Google Colaboratory (Google Colab or Colab in short), now you have the freedom to use a GPU at your disposal. Let’s see how you can clone your GitHub repository into the Google Drive and run your code on top of a GPU provided by Google Colab. Here are some tips before you get in to Colab.]]></summary></entry></feed>
