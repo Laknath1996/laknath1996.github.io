@@ -997,6 +997,11 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/marvosym/umvs.tfm
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesomeone.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
@@ -1053,6 +1058,7 @@ INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb
