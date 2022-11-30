@@ -16,7 +16,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Hello there! My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a second-year PhD student in the Department of Biomedical Engineering at Johns Hopkins University, where I am fortunate to be advised by Dr. [Joshua Vogelstein](https://scholar.google.com/citations?user=DWPfdT4AAAAJ&hl=en) and co-advised by Dr. [Pratik Chaudhari](https://scholar.google.com/citations?user=c_z5hWEAAAAJ&hl=en) (UPenn) and Dr. [Carey E. Priebe](https://scholar.google.com/citations?user=clTVC4UAAAAJ&hl=en) (JHU).
+[Hello there](https://www.youtube.com/watch?v=rEq1Z0bjdwc)! My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a second-year PhD student in the Department of Biomedical Engineering at Johns Hopkins University, where I am fortunate to be advised by Dr. [Joshua Vogelstein](https://scholar.google.com/citations?user=DWPfdT4AAAAJ&hl=en) and co-advised by Dr. [Pratik Chaudhari](https://scholar.google.com/citations?user=c_z5hWEAAAAJ&hl=en) (UPenn) and Dr. [Carey E. Priebe](https://scholar.google.com/citations?user=clTVC4UAAAAJ&hl=en) (JHU).
 
 I broadly work on machine learning, with an aspiration to strive towards reducing the gap between artificial and natural intelligences. My doctoral research is currently focused on out-of-distribution (OOD) generalization, robustness to distribution shifts, and domain adaptation. Additionally, I am interested in causal inference, generative modeling, cognitive neuroscience, and biomedical data science. In the past, I have worked on a number of computer vision and signal processing problems.
 
@@ -26,7 +26,7 @@ I have worked as a Research Assistant at the [Florey Institute of Neuroscience a
 
 I have worked with Dr. [Steffen Bollmann](https://scholar.google.com/citations?user=HmXlj24AAAAJ&hl=en) (Center for Advanced Imaging, University of Queensland, Australia) on developing fully convolutional networks to unwrap wrapped phase in QSM images.  
 
-Outside work, I love spending time with my wife, playing the piano, hiking, and trying out new recipes. I am an avid fan of astronomy, history, science-fiction, fantasy, and anime!
+Outside work, I love spending time with my wife [Malsha](https://malshav.github.io/), playing the piano, hiking, and trying out new recipes. I am an avid fan of astronomy, history, science-fiction (Star Wars!), fantasy, and anime!
 
 <!-- my twitter feed -->
 <!-- {% twitter https://twitter.com/AshwindeSilva1 maxwidth=500 limit=3 %} -->
