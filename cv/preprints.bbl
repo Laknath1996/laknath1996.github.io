@@ -1,7 +1,13 @@
 
 \cvitem{2023}
-{Hayden~S Helm, Weiwei Yang, Ashwin De~Silva, Joshua~T Vogelstein, and Carey~E
-  Priebe.
+{\textbf{Ashwin De Silva}, Rahul Ramesh, Pratik Chaudhari, and Joshua~T.
+  Vogelstein.
+\newblock Prospective learning: Principled extrapolation to the future.
+\newblock {\em In prep.}, 2023.
+}
+\cvitem{2023}
+{Hayden~S Helm, \textbf{Ashwin De Silva}, Joshua~T Vogelstein, Carey~E Priebe,
+  and Weiwei Yang.
 \newblock Approximately optimal domain adaptation with fisher's linear
   discriminant analysis.
 \newblock {\em arXiv preprint arXiv:2302.14186}, 2023.
