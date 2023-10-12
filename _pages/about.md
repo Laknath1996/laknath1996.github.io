@@ -8,26 +8,22 @@ profile:
   image: prof_pic_2.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Clark Hall 317</p>
+    <p>Baltimore MD 21218</p>
+    <p>ldesilv2 at jhu dot edu</p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-[Hello there](https://www.youtube.com/watch?v=rEq1Z0bjdwc)! My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a second-year PhD student in the Department of Biomedical Engineering at Johns Hopkins University, where I am fortunate to be advised by Dr. [Joshua Vogelstein](https://scholar.google.com/citations?user=DWPfdT4AAAAJ&hl=en) and co-advised by Dr. [Pratik Chaudhari](https://scholar.google.com/citations?user=c_z5hWEAAAAJ&hl=en) (UPenn) and Dr. [Carey E. Priebe](https://scholar.google.com/citations?user=clTVC4UAAAAJ&hl=en) (JHU).
+[Hello there](https://www.youtube.com/watch?v=rEq1Z0bjdwc)! My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a third-year PhD student in the Department of Biomedical Engineering at Johns Hopkins University, where I am fortunate to be advised by Dr. [Joshua Vogelstein](https://scholar.google.com/citations?user=DWPfdT4AAAAJ&hl=en), Dr. [Pratik Chaudhari](https://scholar.google.com/citations?user=c_z5hWEAAAAJ&hl=en) (UPenn) and Dr. [Carey E. Priebe](https://scholar.google.com/citations?user=clTVC4UAAAAJ&hl=en).
 
-I broadly work on machine learning, with an aspiration to strive towards reducing the gap between artificial and natural intelligences. My doctoral research is currently focused on out-of-distribution (OOD) generalization, robustness to distribution shifts, and domain adaptation. Additionally, I am interested in causal inference, generative modeling, cognitive neuroscience, and biomedical data science. In the past, I have worked on a number of computer vision and signal processing problems.
+I broadly work on {machine, deep} learning, with an aspiration to strive towards reducing the gap between artificial and natural intelligences. My doctoral research is currently focused on learning under non-stationary distributions, out-of-distribution (OOD) generalization, and robustness to distribution shifts. Outside of theoretical pursuits, I am passionate about tackling challenging problems in computer vision, computational biology, and neuroscience.
 
-I received my Bachelor's degree in Biomedical Engineering from University of Moratuwa, Sri Lanka in 2020 ( ranked *1st among ~950 undergrads* in the Faculty of Engineering). I completed my thesis on *"Designing a Cost-Effective Dry Contact sEMG Sensor System for Controlling a Bionic Hand"* with Dr. [Simon Kappel](https://scholar.google.com/citations?user=HTFY3fsAAAAJ&hl=en) and Dr. [Thilina Lalitharatne](https://scholar.google.com/citations?user=0NvOK1kAAAAJ&hl=en).
+I received my Bachelor's degree in Biomedical Engineering from University of Moratuwa, Sri Lanka in 2020 ( ranked *1st among ~950 undergrads* in the Faculty of Engineering). I completed my thesis on *"Designing a Cost-Effective Dry Contact sEMG Sensor System for Controlling a Bionic Hand"* with Dr. [Simon Kappel](https://scholar.google.com/citations?user=HTFY3fsAAAAJ&hl=en) and Dr. [Thilina Lalitharatne](https://scholar.google.com/citations?user=0NvOK1kAAAAJ&hl=en). As an undergrad, I interned at [The Florey Institute](https://florey.edu.au/) (University of Melbourne) and Center for Advanced Imaging (University of Queensland), where I had the pleasure of working with Dr. [Steve Petrou](https://www.florey.edu.au/science-research/scientist-directory/professor-steven-petrou), Dr. [Saman Halgamuge](https://scholar.google.com.au/citations?user=9cafqywAAAAJ&hl=en), and Dr. [Steffen Bollmann](https://scholar.google.com/citations?user=HmXlj24AAAAJ&hl=en). 
 
-I have worked as a Research Assistant at the [Florey Institute of Neuroscience and Mental Health](https://florey.edu.au/), University of Melbourne, Australia in 2017 and 2018 under the supervision of Prof. [Steve Petrou](https://www.florey.edu.au/science-research/scientist-directory/professor-steven-petrou) and Prof. [Saman Halgamuge](https://scholar.google.com.au/citations?user=9cafqywAAAAJ&hl=en). There, I developed ML & Signal Processing software for modelling genetic epilepsy using high density multi-electrode array (MEA) signals recorded from in-vitro neuronal networks.
-
-I have worked with Dr. [Steffen Bollmann](https://scholar.google.com/citations?user=HmXlj24AAAAJ&hl=en) (Center for Advanced Imaging, University of Queensland, Australia) on developing fully convolutional networks to unwrap wrapped phase in QSM images.  
-
-Outside work, I love spending time with my wife [Malsha](https://malshav.github.io/), playing the piano, hiking, and trying out new recipes. I am an avid fan of astronomy, history, science-fiction (Star Wars!), fantasy, and anime!
+Outside work, I love spending time with my wife [Malsha](https://malshav.github.io/), playing the piano, hiking, and trying out new recipes. I am an avid fan of astronomy, history, science-fiction, anime, and Formula 1!
 
 <!-- my twitter feed -->
 <!-- {% twitter https://twitter.com/AshwindeSilva1 maxwidth=500 limit=3 %} -->

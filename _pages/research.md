@@ -4,6 +4,7 @@ title: research
 permalink: /research/
 description: Short descriptions of research projects, internship projects, course projects, and self-initiated projects.
 nav: true
+nav_order: 2
 display_categories: [research, internships, undergrad course projects, self-initiated projects]
 horizontal: false
 ---
