@@ -4,7 +4,7 @@ title: Computer Interfaced Non Invasive Photo-Plethysmographic Heart Rate Monito
 description: This project was presented in EXMO'17
 img: /assets/img/ppg.png
 importance: 1
-category: self-initiated projects
+category: undergrad course projects
 ---
 
 The objective of the project was to come up with a device and visualization software that can monitor the heart rate, temporal variation of the heart rate and the level of oxygen saturation in the blood in an non invasive manner. 
