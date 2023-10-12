@@ -4,6 +4,7 @@ permalink: /vitae/
 title: vitae
 description: Highlights of my career, education, and services. 
 nav: true
+nav_order: 3
 ---
 
 <!-- For my CV, click [here]({{site.baseurl}}/assets/pdf/Ashwin_CV.pdf). -->
