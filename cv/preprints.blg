@@ -3,48 +3,52 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: preprints.aux
 The style file: plainyrrev.bst
 Database file #1: preprints.bib
-Warning--empty journal in helm2023approximately
+Repeated entry---line 9 of file preprints.bib
+ : @article{helm2023approximately
+ :                               ,
+I'm skipping whatever remains of this entry
+Warning--empty author in helm2023approximately
 Warning--empty journal in dey2022deep
 Warning--empty journal in de2021thickness
 You've used 3 entries,
             2156 wiz_defined-function locations,
-            518 strings with 4822 characters,
-and the built_in function-call counts, 1292 in all, are:
-= -- 100
-> -- 118
+            518 strings with 4710 characters,
+and the built_in function-call counts, 1126 in all, are:
+= -- 88
+> -- 92
 < -- 0
-+ -- 47
-- -- 43
-* -- 98
-:= -- 246
-add.period$ -- 9
++ -- 37
+- -- 33
+* -- 83
+:= -- 210
+add.period$ -- 8
 call.type$ -- 3
-change.case$ -- 29
+change.case$ -- 24
 chr.to.int$ -- 0
 cite$ -- 3
 duplicate$ -- 39
 empty$ -- 69
-format.name$ -- 43
-if$ -- 238
+format.name$ -- 33
+if$ -- 211
 int.to.chr$ -- 0
 int.to.str$ -- 3
 missing$ -- 3
-newline$ -- 16
-num.names$ -- 9
-pop$ -- 47
+newline$ -- 15
+num.names$ -- 8
+pop$ -- 42
 preamble$ -- 0
-purify$ -- 26
+purify$ -- 21
 quote$ -- 0
-skip$ -- 23
+skip$ -- 22
 stack$ -- 0
 substring$ -- 16
-swap$ -- 3
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 12
 warning$ -- 3
-while$ -- 9
+while$ -- 8
 width$ -- 4
-write$ -- 33
-(There were 3 warnings)
+write$ -- 32
+(There was 1 error message)
