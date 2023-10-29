@@ -1,0 +1,168 @@
+{
+  "basics": {
+    "name": "Ashwin De Silva",
+    "label": "PhD Student",
+    "image": "",
+    "email": "ldesilv2@jhu.edu",
+    "location": {},
+    "profiles": []
+  },
+  "work": [],
+  "volunteer": [],
+  "education": [],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Prospective learning",
+      "institute": "Johns Hopkins",
+      "startDate": "2023-01",
+      "summary": "Developing theory and methods for learning under non-stationary distributions.",
+      "highlights" : "1 paper accepted at CoLLAs 2023"
+    },
+    {
+      "name": "Inhomogeneous Lipschitzs properties of large language models",
+      "institute": "Johns Hopkins, Microsoft Research",
+      "startDate": "2023-10",
+      "summary": "Summary TBA."
+    },
+    {
+      "name": "Provably optimal domain adaptation via Fisher's Linear Discriminant",
+      "institute": "Johns Hopkins, Microsoft Research",
+      "startDate": "2022-08",
+      "endDate": "2023-03",
+      "summary": "Developed algorithms aimed at optimal and private domain adaptation for physiological state predictive systems."
+    },
+    {
+      "name": "The value of out-of-distribution data",
+      "institute": "Johns Hopkins",
+      "startDate": "2022-01",
+      "endDate": "2022-12",
+      "summary": "Investigated the impact out-of-distribution (OOD) data have on a supervised learning task.",
+      "highlights" : [
+        "1 paper accepted at ICML 2023", 
+        "Best short paper award at OOD-CV Workshop, ECCV 2022", 
+        "Presented at Distribution Shifts workshop at NeurIPS 2022"
+      ]
+    },
+    {
+      "name": "Kernel density networks",
+      "institute": "Johns Hopkins",
+      "startDate": "2021-08",
+      "endDate": "2022-03",
+      "summary": "Proposed an algorithm that enables a trained neural net to yield well-calibrated posteriors for both in- and out-of-distribution inputs.",
+      "highlights" : [
+        "Under review in AISTATS 2023", 
+        "Presented at the NAISys 2022 workshop, Cold Spring Harbor."
+      ]
+    },
+    {
+      "name": "Domain adaptation for in-bed human pose estimation",
+      "institute": "University of Moratuwa",
+      "startDate": "2021",
+      "endDate": "2022",
+      "highlights" : [
+        "1 Paper accepted at ICASSP 2021",
+        "2nd runner-up at the IEEE Video and Image Processing Cup, ICIP 2021"
+      ]
+    },
+    {
+      "name": "Deep learning-based phase unwrapping",
+      "institute": "University of Moratuwa",
+      "startDate": "2020",
+      "endDate": "2021",
+      "summary": "Developed a joint convolutional spatial quad-directional LSTM architecture for 2D phase unwrapping",
+      "highlights" : "1 Paper accepted at ICASSP 2022"
+    },
+    {
+      "name": "Automated retinal and conjunctival vessel extraction for vascular tortuosity analysis",
+      "institute": "University of Moratuwa",
+      "startDate": "2020",
+      "endDate": "2021",
+      "summary": "Developed a novel retinal and conjunctival vessel extraction framework featuring a fully convolutional network paired with a Hessian based multi-scale vessel enhancement technique"
+    },
+    {
+      "name": "Cost-effective active dry-contact sEMG sensor system",
+      "institute": "University of Moratuwa",
+      "startDate": "2019",
+      "endDate": "2020",
+      "summary": "Designed and developed cost-effective active dry-contact sEMG sensors and acquisition circuitry, formulated a real-time hand gesture recognition algorithm using Temporal Muscle Activation maps based on multi-channel sEMG signals, interfaced the sensors and the recognition algorithm to produce control signals to drive a bionic hand",
+      "highlights" : [
+        "1 Paper accepted at ICASSP 2020",
+        "1 Paper accepted at SMC 2020",
+        "World finalists at IEEE ComSoc student competition",
+        "Finalists at SLAAS Awards",
+        "Finalists at SLIoT challenge"
+      ]
+    },
+    {
+      "name": "CNN-based phase unwrapping from QSM images",
+      "institute": "Center for Advanced Imaging, University of Queensland",
+      "startDate": "2018",
+      "endDate": "2019",
+      "summary": "Worked on computer vision algorithms aimed at tackling the phase unwrapping problem prevalent in MRI images derived from Quantitative Susceptibility Mapping (QSM)."
+    },
+    {
+      "name": "Algorithms for processing and analyzing multi-electrode array signals",
+      "institute": "The Florey Institute of Neuroscience, University of Melbourne",
+      "startDate": "2017",
+      "endDate": "2018",
+      "summary": "Developed machine learning and signal processing algorithms to analyze multi-electrode array (MEA) signals acquired from in-vitro neuronal networks. These algorithms were used to study the network dynamics of various ion channel mutations responsible for genetic epilepsy",
+      "highlights" : [
+        "National Finalists at Migara Ranatunga awards for best internship project"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "institute": "Johns Hopkins University",
+      "startDate": "2021",
+      "endDate": "2026",
+      "classes": {
+        "Applied Mathematics and Statistics": "Probability Theory, Statistical Theory, Non-linear Optimization, Pattern Recognition (Theory and Methods), High Dimensional Probability, Approximation, and Statistical Learning, Computational Molecular Medicine, Optimal Transport", 
+        "Neuroscience and Behavioral Psychology": "Neuroscience Cognition, Brain, Mind and Behavior", 
+        "Biomedical Engineering": "Neuro Data Design I and II",
+        "Computer Science": "Causal Inference"
+      }
+    },
+    {
+      "institute": "University of Moratuwa",
+      "startDate": "2016",
+      "endDate": "2020",
+      "classes": {
+        "Mathematics": "Mathematics, Methods of Mathematics, Differential Equations, Calculus, Linear Algebra, Graph Theory, Numerical Methods, Applied Statistics, Neural Networks and Fuzzy Logic, Time Series and Stochastic Proceses, Operational Research", 
+        "Electrical and Electronics Engineering": "Electrical Engineering, Electronics I, Electronics Lab I, Introduction to Telecommunications, Signals and Systems, Electronics II, Theory of Electricity, Random Signals and Processes, Electronics Lab II, Electromagnetics, Electronics III, Digital Signal Processing, Electronic Control Systems, Circuits and Systems Design, Electronic Devices", 
+        "Computer Engineering": "Programming Fundamentals, Fundamentals of Computer Organization and Design, Fundamentals of Image Processing and Machine Vision, Computer Networks, Machine Vision, Advances in Machine Vision, Pattern Recognition and Machine Intelligence (Audited), Algorithms and Data Strcutures",
+        "Biomedical Engineering": "Engineering in Medicine and Biology, Human Anatomy and Physiology I, Human Anatomy and Physiology II, Analysis of Physiological Systems, Field Visit, Medical Imaging, Scientific Communications for BME, Biostatistics and Ethics for BME, Genomic Signal Processing(Bioinformatics), Biotechnology, Medical Image Processing, Medical Electronics and Instrumentation, Research Project, Industrial/Research Training",
+        "General Engineering": "Fluid Mechanics, Mechanics, Properties of Materials, Engineering Drawing and Computer Aided Modelling",
+        "Management": "Engineering in Context, Business Economics and Financial Accounting Production and Operations Management, Human Resource Management and Industrial Relations",
+        "Humanities": "English Language, Communication Skills, Yoga Practice, Astronomy and Cosmology"
+      }
+    },
+    {
+      "institute": "Workshops",
+      "startDate": "2019",
+      "classes": {
+        "Denoising Diffusion-Based Generative Modeling: Foundations & Applications, CVPR 2022": "",
+        "Graph Neural Networks, ICASSP 2020": "",
+        "Neuromatch Academy, Observer Track (2020)": "",
+        "QSM Workshop, 1st OHBM Australia Chapter Symposium (2018)": "",
+        "Advanced Magnetic Resonance Imaging Workshop, University of Melbourne, Australia (2018)": "",
+        "Neural Computational Modelling Workshop, University of Melbourne, Australia (2018)": ""
+      }
+    },
+    {
+      "institute": "MOOCs",
+      "startDate": "2016",
+      "classes": {
+        "Deep Learning Specialization by Andrew Ng, Deep.ai (2018)": "",
+        "Machine Learning by Andrew Ng, Stanford University (2017)": ""
+      }
+    }
+  ]
+}

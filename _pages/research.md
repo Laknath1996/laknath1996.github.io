@@ -2,14 +2,34 @@
 layout: page
 title: research
 permalink: /research/
-description: Short descriptions of research projects, internship projects, course projects, and self-initiated projects.
+description: Short descriptions of research projects.
 nav: true
 nav_order: 2
-display_categories: [research, internships, undergrad course projects, self-initiated projects]
+display_categories: #[research, internships, undergrad course projects]
 horizontal: false
 ---
 
-### Johns Hopkins University, MD, USA (2021-Present)
+<div class="post">
+
+  <article>
+    <div class="cv">
+      {% for data in site.data.projects %}
+        <div class="card mt-3 p-3">
+          <div>
+            {% case data[0] %}
+            {% when "projects" %}
+              {% include resume/projects.html %}
+            {% else %}
+            {% endcase %}
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+  </article>
+
+</div>
+
+<!-- ### Johns Hopkins University, MD, USA (2021-Present)
 
 * Working on optimal and private transfer learning for physiological predictive systems **(Advisor : Dr. Carey Priebe, a collaboration with Microsoft Research)**
 * Explored the value of out-of-distribution data in generalizing to an in-distribution target task **(Advisors : Dr. Joshua Vogelstein, Dr. Pratik Chaudhari, a collaboration with UPenn)**
@@ -30,7 +50,7 @@ horizontal: false
 
 * Developed MEALEARN, a software that can process 64-channel Multi-Electrode Array (MEA) signals acquired from in-vitro neuronal networks, extract robust interpretable features, classify these networks based on the Sodium ion channel mutation they contain, and visualize the mutation-cluåsters in the latent feature space **(Advisors: Prof. Steve Petrou, Prof. Saman Halgamuge)**
 * Developed MEACON, a software aimed at determining whether the ion channel mutations cause changes to the connectivity patterns of in-vitro neuronal networks by modeling them as time varying graphs based on high density 120-channel MEA signals **(Advisors: Prof. Steve Petrou, Dr. Andre Peterson)**
-* Developed software to visualize MEA spike trains and perform time series analysis of MEA parameters **(Advisors: Prof. Steve Petrou, Prof. Saman Halgamuge)**
+* Developed software to visualize MEA spike trains and perform time series analysis of MEA parameters **(Advisors: Prof. Steve Petrou, Prof. Saman Halgamuge)** -->
 
 -----------------
 ## Project Pages

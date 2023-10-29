@@ -385,16 +385,21 @@ medium_zoom:
 jekyll_get_json:
   - data: resume
     json: assets/json/resume.json # it can also be an url
+  - data: courses
+    json: assets/json/courses.json
+  - data: projects
+    json: assets/json/projects.json
 jsonresume:
-  - basics
-  - work
-  - education
-  - publications
+  # - basics
+  # - work
+  # - education
+  # - publications
   - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+  - courses
+  # - volunteer
+  # - awards
+  # - certificates
+  # - skills
+  # - languages
+  # - interests
+  # - references

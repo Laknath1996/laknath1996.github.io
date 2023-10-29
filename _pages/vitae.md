@@ -10,7 +10,7 @@ nav_order: 3
 <!-- For my CV, click [here]({{site.baseurl}}/assets/pdf/Ashwin_CV.pdf). -->
 
 <div style="margin-left: auto;margin-right: auto;">
-    <object data="..\cv\main.pdf" type="application/pdf" width="825px" height="1175px">
+    <object data="..\cv\main.pdf" type="application/pdf" width="100%" height="1175px">
         <embed src="..\cv\main.pdf">
             <p>This browser does not support PDFs. Please download the PDF to view it: <a href="cv\main.pdf">Download PDF</a>.</p>
         </embed>
@@ -20,8 +20,33 @@ nav_order: 3
 
 ***
 
+<div class="post">
 
-## Coursework, Tutorials, and MOOCs
+  <header class="post-header">
+    <h2 class="post-title">Coursework</h2>
+    <p class="post-description">Includes courses, summer schools, and workshops.</p>
+  </header>
+
+  <article>
+    <div class="cv">
+      {% for data in site.data.courses %}
+        <div class="card mt-3 p-3">
+          <div>
+            {% case data[0] %}
+            {% when "courses" %}
+              {% include resume/courses.html %}
+            {% else %}
+            {% endcase %}
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+  </article>
+
+</div>
+
+
+<!-- ## Coursework, Tutorials, and MOOCs
 -------------
 
 ### Johns Hopkins University (2021-Present)
@@ -87,4 +112,4 @@ nav_order: 3
 ### MOOCs
 
 * Machine Learning by Andrew Ng, Stanford University (2017)
-* Deep Learning Specialization by Andrew Ng, Deep.ai (2018)
+* Deep Learning Specialization by Andrew Ng, Deep.ai (2018) -->
