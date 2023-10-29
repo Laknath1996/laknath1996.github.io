@@ -3,44 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: preprints.aux
 The style file: plainyrrev.bst
 Database file #1: preprints.bib
-You've used 5 entries,
+Warning--empty journal in helm2023approximately
+Warning--empty journal in dey2022deep
+Warning--empty journal in de2021thickness
+You've used 3 entries,
             2156 wiz_defined-function locations,
-            531 strings with 5291 characters,
-and the built_in function-call counts, 2018 in all, are:
-= -- 163
-> -- 175
+            518 strings with 4822 characters,
+and the built_in function-call counts, 1292 in all, are:
+= -- 100
+> -- 118
 < -- 0
-+ -- 70
-- -- 63
-* -- 146
-:= -- 383
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 44
++ -- 47
+- -- 43
+* -- 98
+:= -- 246
+add.period$ -- 9
+call.type$ -- 3
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 65
-empty$ -- 115
-format.name$ -- 63
-if$ -- 380
+cite$ -- 3
+duplicate$ -- 39
+empty$ -- 69
+format.name$ -- 43
+if$ -- 238
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 5
-newline$ -- 26
-num.names$ -- 15
-pop$ -- 64
+int.to.str$ -- 3
+missing$ -- 3
+newline$ -- 16
+num.names$ -- 9
+pop$ -- 47
 preamble$ -- 0
-purify$ -- 39
+purify$ -- 26
 quote$ -- 0
-skip$ -- 39
+skip$ -- 23
 stack$ -- 0
-substring$ -- 27
-swap$ -- 10
+substring$ -- 16
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 0
-while$ -- 15
-width$ -- 6
-write$ -- 60
+type$ -- 12
+warning$ -- 3
+while$ -- 9
+width$ -- 4
+write$ -- 33
+(There were 3 warnings)
