@@ -1,7 +1,11 @@
 
 \cvitem{2023}
-{On the inhomogeneous lipschitzs properties of large language models.
-\newblock {\em In prep.}, 2023.
+{Hayden~S Helm, \textbf{Ashwin De Silva}, Joshua~T Vogelstein, Carey~E Priebe,
+  and Weiwei Yang.
+\newblock Approximately optimal domain adaptation with fisher's linear
+  discriminant analysis.
+\newblock 2023.
+\newblock \textcolor{blue}{\href{https://arxiv.org/pdf/2302.14186.pdf}{[pdf]}}.
 }
 \cvitem{2022}
 {Jayanta Dey, Haoyin Xu, \textbf{Ashwin} \textbf{De Silva}, Will LeVine,
@@ -10,6 +14,7 @@
 \newblock Deep discriminative to kernel generative networks for calibrated
   inference.
 \newblock 2022.
+\newblock \textcolor{blue}{\href{https://arxiv.org/pdf/2201.13001.pdf}{[pdf]}}.
 }
 \cvitem{2021}
 {\textbf{Ashwin} \textbf{De Silva}, Malsha~V Perera, Navodini Wijethilake,
@@ -17,4 +22,5 @@
 \newblock A thickness sensitive vessel extraction framework for retinal and
   conjunctival vascular tortuosity analysis.
 \newblock 2021.
+\newblock \textcolor{blue}{\href{https://arxiv.org/pdf/2101.00435.pdf}{[pdf]}}.
 }

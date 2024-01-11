@@ -5,16 +5,16 @@ The style file: plainyrrev.bst
 Database file #1: workshop_papers.bib
 You've used 2 entries,
             2156 wiz_defined-function locations,
-            515 strings with 4421 characters,
-and the built_in function-call counts, 766 in all, are:
-= -- 62
+            517 strings with 4561 characters,
+and the built_in function-call counts, 784 in all, are:
+= -- 66
 > -- 62
 < -- 0
 + -- 26
 - -- 22
 * -- 52
-:= -- 149
-add.period$ -- 6
+:= -- 153
+add.period$ -- 8
 call.type$ -- 2
 change.case$ -- 16
 chr.to.int$ -- 0
@@ -22,13 +22,13 @@ cite$ -- 0
 duplicate$ -- 26
 empty$ -- 46
 format.name$ -- 22
-if$ -- 144
+if$ -- 148
 int.to.chr$ -- 0
 int.to.str$ -- 2
 missing$ -- 2
-newline$ -- 11
+newline$ -- 13
 num.names$ -- 6
-pop$ -- 24
+pop$ -- 22
 preamble$ -- 0
 purify$ -- 14
 quote$ -- 0
@@ -43,4 +43,4 @@ type$ -- 8
 warning$ -- 0
 while$ -- 6
 width$ -- 3
-write$ -- 24
+write$ -- 28
