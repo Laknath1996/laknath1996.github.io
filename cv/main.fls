@@ -1034,12 +1034,12 @@ INPUT conference.bbl
 INPUT ./conference.bbl
 INPUT conference.bbl
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
+INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 OUTPUT preprints.aux
 INPUT ./preprints.bbl
 INPUT preprints.bbl
 INPUT ./preprints.bbl
 INPUT preprints.bbl
-INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 OUTPUT workshop_papers.aux
 INPUT ./workshop_papers.bbl
 INPUT workshop_papers.bbl
