@@ -1035,6 +1035,11 @@ INPUT ./conference.bbl
 INPUT conference.bbl
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT journals.aux
+INPUT ./journals.bbl
+INPUT journals.bbl
+INPUT ./journals.bbl
+INPUT journals.bbl
 OUTPUT preprints.aux
 INPUT ./preprints.bbl
 INPUT preprints.bbl
