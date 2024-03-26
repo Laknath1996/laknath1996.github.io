@@ -5,7 +5,7 @@ permalink: /
 subtitle: PhD Student at Johns Hopkins
 profile:
   align: right
-  image: prof_pic_2.png
+  image: prof_pic_3.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Clark Hall 317</p>
