@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attended ICML 2023, Honolulu, HI in person.
+Attended ICML 2023, Honolulu, HI.

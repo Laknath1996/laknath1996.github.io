@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student at Johns Hopkins
+subtitle: PhD Student at Johns Hopkins University
 profile:
   align: right
   image: prof_pic_3.jpg

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Passed my doctoral board oral (DBO) exam. Officially a PhD candidate now!
+Passed my doctoral board oral (DBO) exam. Officially a PhD candidate now! 🎓

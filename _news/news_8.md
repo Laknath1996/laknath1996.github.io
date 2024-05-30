@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Received the [MINDS](https://www.minds.jhu.edu/) fellowship for Spring 2024 
+Received the [MINDS](https://www.minds.jhu.edu/) fellowship for Spring 2024 🏆

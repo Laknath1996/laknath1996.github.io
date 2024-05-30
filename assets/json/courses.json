@@ -5,10 +5,10 @@
       "startDate": "2021",
       "endDate": "2026",
       "classes": {
-        "Applied Mathematics and Statistics": "Probability Theory, Statistical Theory, Non-linear Optimization, Pattern Recognition (Theory and Methods), High Dimensional Probability, Approximation, and Statistical Learning, Computational Molecular Medicine, Optimal Transport", 
+        "Applied Mathematics and Statistics": "Probability Theory, Statistical Theory, Non-linear Optimization I and II (audit), Pattern Recognition:Theory and Methods (audit), High Dimensional Probability, Approximation, and Statistical Learning, Computational Molecular Medicine, Optimal Transport, Machine Learning I and II, Probabilistic Machine Learning (audit), Compressed Sensing and Sparse Recovery", 
         "Neuroscience and Behavioral Psychology": "Neuroscience Cognition, Brain, Mind and Behavior", 
         "Biomedical Engineering": "Neuro Data Design I and II",
-        "Computer Science": "Causal Inference"
+        "Computer Science": "Causal Inference (audit)"
       }
     },
     {
