@@ -5,7 +5,10 @@
       "institute": "Johns Hopkins",
       "startDate": "2023-01",
       "summary": "Developing theory and methods for learning under non-stationary distributions.",
-      "highlights" : "1 paper accepted at CoLLAs 2023"
+      "highlights" : [
+        "1 paper accepted at NeurIPS 2024",
+        "1 paper accepted at CoLLAs 2023"
+      ]
     },
     {
       "name": "Inhomogeneous Lipschitzs properties of large language models",
@@ -18,7 +21,8 @@
       "institute": "Johns Hopkins, Microsoft Research",
       "startDate": "2022-08",
       "endDate": "2023-03",
-      "summary": "Developed algorithms aimed at optimal and private domain adaptation for physiological state predictive systems."
+      "summary": "Developed algorithms aimed at optimal and private domain adaptation for physiological state predictive systems.",
+      "highlights" : "Journal paper at Mathematics special issue on Statistical Analysis: Theory, Methods and Applications"
     },
     {
       "name": "The value of out-of-distribution data",

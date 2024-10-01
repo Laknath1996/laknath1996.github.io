@@ -23,7 +23,10 @@
       "institute": "Johns Hopkins",
       "startDate": "2023-01",
       "summary": "Developing theory and methods for learning under non-stationary distributions.",
-      "highlights" : "1 paper accepted at CoLLAs 2023"
+      "highlights" : [
+        "1 paper accepted at NeurIPS 2024",
+        "1 paper accepted at CoLLAs 2023"
+      ]
     },
     {
       "name": "Inhomogeneous Lipschitzs properties of large language models",
