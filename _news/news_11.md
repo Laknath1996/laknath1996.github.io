@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-“Prospective Learning: Learning for a Dynamic Future” was accepted to NeurIPS 2024! 💫
+[“Prospective Learning: Learning for a Dynamic Future”](https://arxiv.org/abs/2411.00109) was accepted to NeurIPS 2024! 💫
