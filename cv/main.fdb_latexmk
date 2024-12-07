@@ -1,41 +1,20 @@
 # Fdb version 3
-["bibtex conference"] 1730725511 "conference.aux" "conference.bbl" "conference" 1730725512
+["bibtex preprints"] 1733577722 "preprints.aux" "preprints.bbl" "preprints" 1733577940
   "./plainyrrev.bst" 1665133224 22354 701be7b0ee7a4063db77193b06c8696b ""
-  "conference.aux" 1730725512 56 8563cabb4626bfe6c23ac7dae8dcb6c0 "pdflatex"
-  "conference.bib" 1730725511 3211 ac5029c58fe1867825f420ce68224a0d ""
-  (generated)
-  "conference.bbl"
-  "conference.blg"
-["bibtex journals"] 1727779905 "journals.aux" "journals.bbl" "journals" 1730725512
-  "./plainyrrev.bst" 1665133224 22354 701be7b0ee7a4063db77193b06c8696b ""
-  "journals.aux" 1730725512 54 331f4f1714ae9baa5c416f7db9725e31 "pdflatex"
-  "journals.bib" 1709324311 1250 e4a92b48756e08ca4155bbecb3d3b599 ""
-  (generated)
-  "journals.bbl"
-  "journals.blg"
-["bibtex preprints"] 1727779905 "preprints.aux" "preprints.bbl" "preprints" 1730725512
-  "./plainyrrev.bst" 1665133224 22354 701be7b0ee7a4063db77193b06c8696b ""
-  "preprints.aux" 1730725512 55 255e7ef5765bedc1b4e0f69214ea875d "pdflatex"
+  "preprints.aux" 1733577940 55 255e7ef5765bedc1b4e0f69214ea875d "pdflatex"
   "preprints.bib" 1709324221 932 24888a86ef566a7dfdad3d3bc97f53a5 ""
   (generated)
   "preprints.bbl"
   "preprints.blg"
-["bibtex theses"] 1727779905 "theses.aux" "theses.bbl" "theses" 1730725512
+["bibtex selected_pubs"] 1733577722 "selected_pubs.aux" "selected_pubs.bbl" "selected_pubs" 1733577940
   "./plainyrrev.bst" 1665133224 22354 701be7b0ee7a4063db77193b06c8696b ""
-  "theses.aux" 1730725512 52 38be74813986b72f3a2b2fc5c1678902 "pdflatex"
-  "theses.bib" 1665133224 361 a2d4fb31f2c813630b9420d869aad8b3 ""
+  "selected_pubs.aux" 1733577940 59 1c65919e4f5e2d2592ff33e3a937fdc1 "pdflatex"
+  "selected_pubs.bib" 1733577622 4463 d51bce982b91f0adf6bedf3b291d7d65 ""
   (generated)
-  "theses.bbl"
-  "theses.blg"
-["bibtex workshop_papers"] 1727779905 "workshop_papers.aux" "workshop_papers.bbl" "workshop_papers" 1730725512
-  "./plainyrrev.bst" 1665133224 22354 701be7b0ee7a4063db77193b06c8696b ""
-  "workshop_papers.aux" 1730725512 61 813b8fb0ad21a649e55dab008336a4cd "pdflatex"
-  "workshop_papers.bib" 1698753542 857 40f0199de38fe17b84bdf4f123dbf0a9 ""
-  (generated)
-  "workshop_papers.bbl"
-  "workshop_papers.blg"
-["pdflatex"] 1730725511 "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" "main.pdf" "main" 1730725512
-  "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" 1728387517 22275 9d9f2b87799b40b9c69e424fa8a81792 ""
+  "selected_pubs.bbl"
+  "selected_pubs.blg"
+["pdflatex"] 1733577939 "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" "main.pdf" "main" 1733577940
+  "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" 1733577939 22825 82b1bd28e7830b3c571b3054bf1b91f1 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -190,26 +169,20 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649776656 2826453 2ebe4d28fee2a90f9054f92f6f9e874f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "conference.bbl" 1730725511 2651 d72f479b47a994767a51e95e5934837b "bibtex conference"
-  "journals.bbl" 1727779906 259 70093bf8eb6c6be56bf610ab90e8ab48 "bibtex journals"
-  "main.aux" 1730725512 2374 01cff36befc84f5be92909df2c37aefd "pdflatex"
-  "main.out" 1730725512 2284 ae01b3d0ff06eafb057f439c96196410 "pdflatex"
-  "main.tex" 1728387517 22275 9d9f2b87799b40b9c69e424fa8a81792 ""
+  "main.aux" 1733577940 1973 c0c3964c1f4f17e4a4930185d3adc497 "pdflatex"
+  "main.out" 1733577940 1788 18d2cf87de94c2b111dd837c4ef1f024 "pdflatex"
+  "main.tex" 1733577939 22825 82b1bd28e7830b3c571b3054bf1b91f1 ""
   "moderncv.cls" 1665133224 18216 5af44b44ca89c5563c06b77a2f39d0fd ""
   "moderncvcolorblue.sty" 1665133224 1008 81d85f2fad060c2f7b374363b6bb7415 ""
   "moderncvcompatibility.sty" 1665133224 3397 6646c8798a6ebba586650d124c645c99 ""
   "moderncvstyleclassic.sty" 1665133224 12888 50ab6511b52c7267c90f45332a3c3a79 ""
-  "preprints.bbl" 1727779905 727 c024e7a1ff4aeecb6ba7aabbeafe2f9d "bibtex preprints"
-  "theses.bbl" 1727779905 277 8079ee0686ee50e44dc31fbe05720da2 "bibtex theses"
+  "preprints.bbl" 1733577722 727 c024e7a1ff4aeecb6ba7aabbeafe2f9d "bibtex preprints"
+  "selected_pubs.bbl" 1733577722 2909 ab9890539deab2f5b764ddc2216a6beb "bibtex selected_pubs"
   "tweaklist.sty" 1665133224 1965 7ec24f2691e7167d3f5445b230b1b4e4 ""
-  "workshop_papers.bbl" 1727779905 678 4b2c083066dd7f85e192389d5660d783 "bibtex workshop_papers"
   (generated)
-  "conference.aux"
-  "journals.aux"
   "main.aux"
   "main.log"
   "main.out"
   "main.pdf"
   "preprints.aux"
-  "theses.aux"
-  "workshop_papers.aux"
+  "selected_pubs.aux"
