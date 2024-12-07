@@ -17,7 +17,7 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-[Hello there](https://www.youtube.com/watch?v=rEq1Z0bjdwc)! My name is Laknath Ashwin De Silva (ලක්නාත් අශ්වි​න් ද සිල්වා in Sinhalese script). I am a PhD candidate in the Department of Biomedical Engineering at Johns Hopkins University, where I am fortunate to be advised by Dr. [Joshua Vogelstein](https://scholar.google.com/citations?user=DWPfdT4AAAAJ&hl=en), Dr. [Pratik Chaudhari](https://scholar.google.com/citations?user=c_z5hWEAAAAJ&hl=en) (UPenn) and Dr. [Carey E. Priebe](https://scholar.google.com/citations?user=clTVC4UAAAAJ&hl=en).
+[Hello there](https://www.youtube.com/watch?v=rEq1Z0bjdwc)! My name is Ashwin De Silva (අශ්වි​න් ද සිල්වා in Sinhalese script). I am a PhD candidate in the Department of Biomedical Engineering at Johns Hopkins University, where I am fortunate to be advised by Dr. [Joshua Vogelstein](https://scholar.google.com/citations?user=DWPfdT4AAAAJ&hl=en), Dr. [Pratik Chaudhari](https://scholar.google.com/citations?user=c_z5hWEAAAAJ&hl=en) (UPenn) and Dr. [Carey E. Priebe](https://scholar.google.com/citations?user=clTVC4UAAAAJ&hl=en).
 
 I broadly work on {machine, deep} learning, with an aspiration of bridging the gap between artificial and natural intelligences. My doctoral research is currently focused on learning under non-stationary distributions and out-of-distribution (OOD) generalization with applications in large language models, computer vision, and biomedical data science.
 
