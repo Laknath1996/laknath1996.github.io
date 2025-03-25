@@ -1,22 +1,21 @@
 # Fdb version 3
-["bibtex preprints"] 1733577722 "preprints.aux" "preprints.bbl" "preprints" 1733578431
+["bibtex preprints"] 1733577722 "preprints.aux" "preprints.bbl" "preprints" 1741611157
   "./plainyrrev.bst" 1665133224 22354 701be7b0ee7a4063db77193b06c8696b ""
-  "preprints.aux" 1733578431 55 255e7ef5765bedc1b4e0f69214ea875d "pdflatex"
+  "preprints.aux" 1741611156 55 255e7ef5765bedc1b4e0f69214ea875d "pdflatex"
   "preprints.bib" 1709324221 932 24888a86ef566a7dfdad3d3bc97f53a5 ""
   (generated)
   "preprints.bbl"
   "preprints.blg"
-["bibtex selected_pubs"] 1733577722 "selected_pubs.aux" "selected_pubs.bbl" "selected_pubs" 1733578431
+["bibtex selected_pubs"] 1733577722 "selected_pubs.aux" "selected_pubs.bbl" "selected_pubs" 1741611157
   "./plainyrrev.bst" 1665133224 22354 701be7b0ee7a4063db77193b06c8696b ""
-  "selected_pubs.aux" 1733578431 59 1c65919e4f5e2d2592ff33e3a937fdc1 "pdflatex"
+  "selected_pubs.aux" 1741611156 59 1c65919e4f5e2d2592ff33e3a937fdc1 "pdflatex"
   "selected_pubs.bib" 1733577622 4463 d51bce982b91f0adf6bedf3b291d7d65 ""
   (generated)
   "selected_pubs.bbl"
   "selected_pubs.blg"
-["pdflatex"] 1733578430 "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" "main.pdf" "main" 1733578431
-  "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" 1733578430 22912 7f0f9f95ddcc1c5cfef7c5eb2f6a040b ""
+["pdflatex"] 1741611156 "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" "main.pdf" "main" 1741611157
+  "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" 1741611156 23146 e5a4184f7eb76dc9ffae3ade6e61bef0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
-  "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc" 1463430686 2437 443c81fb50993bacedc5f9a206c322b0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -24,7 +23,6 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm" 1136768653 3584 3169d30142b88a27d4ab0e3468e963a2 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesomeone.tfm" 1463430686 1360 edd73eeb60d8a74bfaa55e699a26e7be ""
-  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesomethree.tfm" 1463430686 808 fa82c08e99ce03a59bd6b6935f08982c ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm" 1463430686 1360 76c648952c3cfb458d3ca1d9dde7e9bf ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm" 1254269338 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm" 1254269338 11176 53ebf7a171df1f9447b387b178768bb5 ""
@@ -111,7 +109,6 @@
   "/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic.tex" 1465747999 33234 40b369fd6c8364bdcc88401c4c1db5bf ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-pdftex.tex" 1463430686 46429 f7ffa71c62c5257edd5542253d4cea15 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomeone.fd" 1465747999 519 95a44d171fadbf1cdf74812987f3baf1 ""
-  "/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd" 1465747999 533 8ef7321a43d7426394eae184116ae32c ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd" 1465747999 519 e730d6099b4b4ed4da396d7b545ddf49 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/footmisc/footmisc.sty" 1646774737 21361 67512b0642debcd4503e59fcbbb767f1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
@@ -169,9 +166,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649776656 2826453 2ebe4d28fee2a90f9054f92f6f9e874f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "main.aux" 1733578431 2062 541f214083a23c435312f29e6dd942b6 "pdflatex"
-  "main.out" 1733578431 1858 443d49dca91f80460fe8926f86140307 "pdflatex"
-  "main.tex" 1733578430 22912 7f0f9f95ddcc1c5cfef7c5eb2f6a040b ""
+  "main.aux" 1741611156 2062 c851c5d2caf9f701415e71ed78ba35ba "pdflatex"
+  "main.out" 1741611156 1858 443d49dca91f80460fe8926f86140307 "pdflatex"
+  "main.tex" 1741611156 23146 e5a4184f7eb76dc9ffae3ade6e61bef0 ""
   "moderncv.cls" 1665133224 18216 5af44b44ca89c5563c06b77a2f39d0fd ""
   "moderncvcolorblue.sty" 1665133224 1008 81d85f2fad060c2f7b374363b6bb7415 ""
   "moderncvcompatibility.sty" 1665133224 3397 6646c8798a6ebba586650d124c645c99 ""

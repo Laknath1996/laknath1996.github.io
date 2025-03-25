@@ -1007,11 +1007,6 @@ INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.f
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesometwo.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
-INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/fontawesome/FontAwesome--fontawesomethree.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmss12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/rm-lmr10.tfm
@@ -1046,7 +1041,6 @@ INPUT ./main.out
 INPUT ./main.out
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb
