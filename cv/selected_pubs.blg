@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: selected_pubs.aux
+The style file: plainyrrev.bst
+Database file #1: selected_pubs.bib
+Warning--can't use both volume and number fields in math12050746
+You've used 10 entries,
+            2156 wiz_defined-function locations,
+            561 strings with 6958 characters,
+and the built_in function-call counts, 3839 in all, are:
+= -- 325
+> -- 305
+< -- 1
++ -- 120
+- -- 108
+* -- 261
+:= -- 722
+add.period$ -- 38
+call.type$ -- 10
+change.case$ -- 79
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 131
+empty$ -- 232
+format.name$ -- 108
+if$ -- 735
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 10
+newline$ -- 59
+num.names$ -- 30
+pop$ -- 110
+preamble$ -- 0
+purify$ -- 69
+quote$ -- 0
+skip$ -- 80
+stack$ -- 0
+substring$ -- 52
+swap$ -- 22
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 40
+warning$ -- 1
+while$ -- 30
+width$ -- 12
+write$ -- 137
+(There was 1 warning)
