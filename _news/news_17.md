@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Simple Calibration via Geodesic Kernels** is accepted to TMLR! 🎉
+[Simple Calibration via Geodesic Kernels](https://openreview.net/pdf?id=dpcRp8ix5T) is accepted to TMLR! 🎉
