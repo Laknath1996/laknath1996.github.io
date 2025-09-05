@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1746652278 "/Users/ashwindesilva/personal website/laknath1996.github.io/resume/main.tex" "main.pdf" "main" 1746652278
-  "/Users/ashwindesilva/personal website/laknath1996.github.io/resume/main.tex" 1746652277 13888 fefb4578010eb0db9fc0e7061b3075a8 ""
+["pdflatex"] 1750485898 "/Users/ashwindesilva/personal website/laknath1996.github.io/resume/main.tex" "main.pdf" "main" 1750485899
+  "/Users/ashwindesilva/personal website/laknath1996.github.io/resume/main.tex" 1750485898 13888 fefb4578010eb0db9fc0e7061b3075a8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -115,8 +115,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649776656 2826453 2ebe4d28fee2a90f9054f92f6f9e874f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "main.aux" 1746652278 2641 9bbff12c722f349b716b0654ef77f7d1 "pdflatex"
-  "main.tex" 1746652277 13888 fefb4578010eb0db9fc0e7061b3075a8 ""
+  "main.aux" 1750485899 2641 9bbff12c722f349b716b0654ef77f7d1 "pdflatex"
+  "main.tex" 1750485898 13888 fefb4578010eb0db9fc0e7061b3075a8 ""
   (generated)
   "main.aux"
   "main.log"
