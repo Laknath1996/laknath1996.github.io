@@ -3,7 +3,7 @@ layout: page
 title: research
 permalink: /research/
 description: Short descriptions of research projects.
-nav: true
+nav: false
 nav_order: 2
 display_categories: #[research, internships, undergrad course projects]
 horizontal: false

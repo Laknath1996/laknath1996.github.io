@@ -4,7 +4,7 @@ permalink: /vitae/
 title: vitae
 description: Highlights of my career, education, and services. 
 nav: true
-nav_order: 3
+nav_order: 1
 ---
 
 <!-- For my CV, click [here]({{site.baseurl}}/assets/pdf/Ashwin_CV.pdf). -->
@@ -18,7 +18,7 @@ nav_order: 3
 </div>
 
 
-***
+<!-- ***
 
 <div class="post">
 
@@ -43,7 +43,7 @@ nav_order: 3
       </div>
   </article>
 
-</div>
+</div> -->
 
 
 <!-- ## Coursework, Tutorials, and MOOCs
