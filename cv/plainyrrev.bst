@@ -121,10 +121,8 @@ FUNCTION {output.check}
 
 FUNCTION {output.bibitem}
 { newline$
-  "\cvitem{" write$
-  year write$
-  "}" write$
   newline$
+  "\vspace{0.5em}" write$
   "{" write$
   ""
   before.all 'output.state :=
