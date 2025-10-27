@@ -41,10 +41,10 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- News -->
-          {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
+          <!-- Latest News -->
+          {% if page.latest_news -%}
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">recent news</a></h2>
+            {% include latest_news.html %}
           {%- endif %}
 
           <!-- Latest posts -->
@@ -53,11 +53,24 @@ layout: default
             {%- include latest_posts.html %}
           {%- endif %}
 
-          <!-- Selected papers -->
+          <!-- Selected publications -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
+            {% include selected_publications.html %}
           {%- endif %}
+
+          <!-- Selected awards -->
+          {% if page.selected_awards -%}
+            <h2><a href="{{ '/awards/' | relative_url }}" style="color: inherit;">selected awards and honors</a></h2>
+            {% include selected_awards.html %}
+          {%- endif %}
+
+          <!-- Teaching -->
+          {% if page.teaching -%}
+            <h2><a href="{{ '/teaching/' | relative_url }}" style="color: inherit;">teaching</a></h2>
+            {% include teaching.html %}
+          {%- endif %}
+
 
           <!-- Social -->
           {%- if page.social %}

@@ -1,0 +1,11 @@
+<ul class="selected-awards">
+  {% assign selected_awards = site.data.awards | where: "selected", true %}
+  {% for award in selected_awards %}
+    <li>
+      <strong>{{ award.title }}</strong> — {{ award.organization }} ({{ award.year }})
+      {% if award.description %}
+        <br><em>{{ award.description }}</em>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

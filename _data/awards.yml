@@ -1,0 +1,47 @@
+- title: "Best Student Paper Award"
+  organization: "18th Annual Conference on Artificial General Intelligence"
+  year: 2025
+  description:
+  selected: true
+
+- title: "Membership in Alpha Eta Mu Beta (AEMB)"
+  organization: "National Biomedical Engineering Honor Society, USA"
+  year: 2025
+  description:
+  selected: true
+
+- title: "Mathematical Institute for Data Science (MINDS) Fellowship"
+  organization: "Johns Hopkins University,  Baltimore, MD"
+  year: 2024
+  description:
+  selected: true
+
+- title: "Student Spotlight"
+  organization: "Johns Hopkins School of Medicine, Baltimore, MD"
+  year: 2023
+  description:
+  selected: true
+
+- title: "Best Short Paper Award"
+  organization: "ECCV Workshop on Out-of-Distribution Generalization in Computer Vision"
+  year: 2022
+  description:
+  selected: true
+
+- title: "Second Runner-Up, IEEE Video and Image Processing (VIP) Cup"
+  organization: IEEE International Conference on Image Processing (ICIP)
+  year: 2021
+  description:
+  selected: true
+
+- title: "Gold Medal"
+  organization: "University of Moratuwa, Sri Lanka"
+  year: 2020
+  description: "Awarded for the best academic performance in the graduating class of the Department of Electronic and Telecommunication Engineering (BME Stream)"
+  selected: true
+
+- title: "Prof. Pathuwathawithana Memorial Prize"
+  organization: "University of Moratuwa, Sri Lanka"
+  year: 2020
+  description: "Awarded for attaining the highest GPA in the Faculty of Engineering"
+  selected: true

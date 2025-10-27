@@ -1,0 +1,15 @@
+<ul class="teaching-list">
+  {% assign selected_teaching = site.data.teaching | where: "selected", true %}
+  {% for t in selected_teaching %}
+    <li>
+      <strong>{{ t.course }}</strong> — {{ t.role }} ({{ t.term }})<br>
+      <em>{{ t.institution }}</em>, {{ t.location }}<br>
+      {% if t.description %}
+        {{ t.description }}
+      {% endif %}
+      {% if t.link %}
+        <a href="{{ t.link }}" target="_blank">[course link]</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

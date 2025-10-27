@@ -1,0 +1,18 @@
+<ul class="selected-publications">
+  {% assign selected_pubs = site.data.publications | where: "selected", true %}
+  {% for pub in selected_pubs %}
+    {% assign author_str = pub.authors %}
+    {% assign author_bold = author_str | replace: "Ashwin De Silva", "<strong>Ashwin De Silva</strong>" %}
+    {% assign author_html = author_bold | markdownify | replace: "<p>", "" | replace: "</p>", "" | strip %}
+    <li>
+      <strong>{{ pub.title }}</strong><br>
+      <em>{{ author_html }}</em><br>
+      {{ pub.venue }}, {{ pub.year }}
+      {% if pub.link %}
+        <a href="{{ pub.link }}" target="_blank">[link]</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+

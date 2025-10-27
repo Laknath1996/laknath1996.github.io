@@ -1,0 +1,34 @@
+- title: "Prospective Learning: Learning for a Dynamic Future"
+  authors: "Ashwin De Silva, Rahul Ramesh, Rubing Yang, Siyu Yu, Pratik Chaudhari, Joshua T. Vogelstein"
+  venue: "NeurIPS"
+  year: 2025
+  link: "https://arxiv.org/pdf/2411.00109"
+  selected: true
+
+- title: "The Value of Out-of-Distribution Data"
+  authors: "Ashwin De Silva, Rahul Ramesh, Carey E. Priebe, Pratik Chaudhari, Joshua T. Vogelstein"
+  venue: "ICML"
+  year: 2024
+  link: "https://proceedings.mlr.press/v202/de-silva23a/de-silva23a.pdf"
+  selected: true
+
+- title: "Simple Calibration via Geodesic Kernels"
+  authors: "Jayanta Dey, Haoyin Xu, Ashwin De Silva, Joshua T. Vogelstein"
+  venue: "TMLR"
+  year: 2025
+  link: "https://openreview.net/pdf?id=dpcRp8ix5T"
+  selected: true
+
+- title: "A Joint Convolutional and Spatial Quad-Directional LSTM Network for Phase Unwrapping"
+  authors: "Malsha V. Perera, Ashwin De Silva"
+  venue: "ICASSP"
+  year: 2021
+  link: "https://arxiv.org/pdf/2010.13268"
+  selected: true
+
+- title: "Real-time Hand Gesture Recognition Using Temporal Muscle Activation Maps of Multi-channel sEMG Signals"
+  authors: "Ashwin De Silva, Malsha V. Perera, Kithmin Wickramasinghe, Asma M. Naim, Thilina Dulantha Lalitharatne, Simon L. Kappel"
+  venue: "ICASSP"
+  year: 2020
+  link: "https://arxiv.org/pdf/2002.03159"
+  selected: true

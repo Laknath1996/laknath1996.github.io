@@ -1,0 +1,31 @@
+- course: "EN.580.697 Biomedical Data Design"
+  role: "Teaching Assistant"
+  term: "Fall 2025"
+  institution: "Johns Hopkins University"
+  location: "Baltimore, MD"
+  description:
+  selected: true
+
+- course: "EN 1060 Signals and Systems"
+  role: "Junior Lecturer"
+  term: "Fall 2020"
+  institution: "University of Moratuwa"
+  location: "Sri Lanka"
+  description: 
+  selected: true
+
+- course: "EN 3030 Circuits and Systems Design"
+  role: "Junior Lecturer"
+  term: "Spring 2020"
+  institution: "University of Moratuwa"
+  location: "Sri Lanka"
+  description: 
+  selected: true
+
+- course: "BM 2101 Analysis of Physiological Systems"
+  role: "Junior Lecturer"
+  term: "Spring 2020"
+  institution: "University of Moratuwa"
+  location: "Sri Lanka"
+  description: 
+  selected: true
