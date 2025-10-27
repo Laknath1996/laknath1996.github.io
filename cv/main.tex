@@ -1,421 +1,493 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.1 (9/12/12)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Xavier Danaux (xdanaux@gmail.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
-% used for structuring the document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt, letterpaper]{article}
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=1.5 cm, % seperation between body and page edge from the top
+    bottom=1.5 cm, % seperation between body and page edge from the bottom
+    left=1.5 cm, % seperation between body and page edge from the left
+    right=1.5 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={John Doe's CV},
+    pdfauthor={John Doe},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+\usepackage{ragged2e}
 
-\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
-\usepackage{standalone}
-\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{charter}
 
-\usepackage[scale=0.85]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
 
-%\usepackage[utf8]{inputenc}
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
 
-%\usepackage{booktabs}
-\usepackage{fontawesome}
-\usepackage{marvosym} % For cool symbols.
-% \usepackage{hyperref}
-\usepackage{footmisc}
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
 
-
-
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-\firstname{Ashwin} % Your first name
-\familyname{De Silva} % Your last name
-
-% All information in this block is optional, comment out any lines you don't need
-% \title{Curriculum Vitae}
-\address{Clark Hall 317}{Baltimore MD 21218}
-% \mobile{(+91) 0000000, (+91) 0000000}
-
-
-%\fax{(000) 111 1113}
- 
-%\social{github}{stefano-bragaglia}
-\email{ldesilv2@jhu.edu} 
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
 
 
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
 
-\homepage{https://laknath1996.github.io}{personal website}
-
-% social link \faGithub, \faSkype, \faLinkedin,\faStackExchange, and \faStackOverflow
-\extrainfo{
-    \faGraduationCap\href{https://scholar.google.com/citations?user=xqhwEGIAAAAJ}{ Google Scholar} \quad
-    \faGithub\href{https://github.com/Laknath1996}{ Github} \quad
-    \faLinkedin\href{https://www.linkedin.com/in/ashwin-de-silva-6852b14b/}{ Linkedin} \quad
-    % \faTwitter\href{https://twitter.com/AshwindeSilva1}{ Twitter} \quad
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
     }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
 
-%\social[linkedin][www.linkedin.com]{name}
-% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
 
-% \photo[70pt][0.3pt]{picture} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
-%\quote{Not Attention, Patience is all we need.}
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{1cm, \fill, 3.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
 
-%----------------------------------------------------------------------------------------
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
 
-\newcommand{\cvdoublecolumn}[2]{%
-  \cvitem[.75em]{}{%
-    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
-    \hfill%
-    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
-    }%
-}
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+    }}}%
+  }%
+}%
 
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
 
+% new command for external links:
 
-\usepackage{multibbl}
-\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
-
-
-% \newcommand{\cvreference}[7]{%
-%     \textbf{#1}\newline% Name
-%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
-%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
-%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
-%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
-%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
-%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
 
 \begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
 
-\makecvtitle % Print the CV title
-% About Me
-% I am a PhD candidate in the Department of Biomedical Engineering at Johns Hopkins University 
-% where I am advised by Prof. Joshua Vogelstein, Prof. Pratik Chaudhari (UPenn), and Prof. Carey E. Priebe. 
-% I work on \{machine, deep\} learning, with an aspiration of bridging the gap between 
-% machine and natural intelligence. My doctoral research focuses on continual learning, 
-% out-of-distribution (OOD) generalization, and learning under non-stationary 
-% distributions, with
-% applications in large language models, computer vision, 
-% and biomedical data science.
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Ashwin De Silva
 
-Ph.D. candidate in Biomedical Engineering with expertise in statistical machine learning, deep learning and signal processing, focused on developing theory and robust methods for prospective learning, continual learning and out-of-distribution generalization. Passionate about bridging artificial and natural intelligence. My work spans applications in large language models, biomedical data, and computer vision.
+        \vspace{5 pt}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+        \normalsize
+        \mbox{Baltimore, MD}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{mailto:youremail@yourdomain.com}{ldesilv2@jhu.edu}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://laknath1996.github.io/}{Personal Website}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://scholar.google.com/citations?user=xqhwEGIAAAAJ&hl=en}{Google Scholar}}%
+    \end{header}
 
-\section{Education}
-\cventry{2021--present}{Ph.D., Biomedical Engineering}{Johns Hopkins University}{MD}{USA}
-{\textit{Highlighted Courses}: Probability Theory, Statistical Theory, High-Dimensional Approximation, Machine Learning, Optimal Transport, Probabilistic Models of Visual Cortex, Neuroscience and Cognition, Computational Molecular Medicine, Compressed Sensing \& Sparse Recovery}
-\cvitem{CGPA :}{3.97/4.00}
+    \vspace{5 pt - 0.3 cm}
 
-\cventry{2021--2024}{M.S.E., Applied Mathematics and Statistics}{Johns Hopkins University}{MD}{USA}
-{\textit{Focus Area}: Statistics and Statistical Learning}
-\cvitem{CGPA :}{3.97/4.00}
-
-\cventry{2016--2020 :}{B.Sc., Biomedical Engineering}{University of Moratuwa}{Sri Lanka}{}{Class Rank : 1 out of 117, Faculty Rank : 1 out of 948, Included in Dean's Honors List every semester. \\ \textit{Highlighted Courses}: Real Analysis, Calculus, Differential Equations, Linear Algebra, Signals and Systems, Machine Vision, Digital Signal Processing, Data Structures \& Algorithms}{}
-\cvitem{CGPA :}{4.09/4.20 (First Class Honors)}
-
-% \let\thefootnote\relax\footnotetext{For exhaustive lists of courses and research works, please visit: \textcolor{blue}{\href{https://laknath1996.github.io/vitae/}{list of courses}}, \textcolor{blue}{\href{https://laknath1996.github.io/research/}{list of research works}} }
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Research Experience}
-\cventry{Summer 2025}{Amazon (AWS AI), Santa Clara, CA}{Applied Scientist Intern}{}{}{Developed self-adaptive context recomposition methods for multi-turn tool-using agents that reduced the input token utilization by 50\% while maintaining the task success rate across mathematical reasoning and software engineering benchmarks}
-\cventry{Summer 2024}{Amazon (AWS AI), Santa Clara, CA}{Applied Scientist Intern}{}{}{Developed large language models (LLMs) based on state-space models (SSMs) to perform code generation and constrained generation}
-\cventry{2021-Present}{Johns Hopkins University, Baltimore, MD}{Graduate Research Assistant}{}{}{Building theory and methods for learning from non-stationary and out-of-distribution data, with applications in large language models, computer vision, and biomedical data science}
-\cventry{2019-2021}{University of Moratuwa, Sri Lanka}{Junior Lecturer}{}{}{Developed deep learning models for various problems including retinal vascular segmentation, surface EMG based hand gesture recognition, human pose estimation, and phase unwrapping}
-\cventry{2018}{Center for Advanced Imaging, University of Queensland, Australia}{Research Intern}{}{}{Developed convolutional neural networks (CNNs) to solve the inverse problem of phase unwrapping}
-\cventry{2017,2018}{The Florey Institute of Neuroscience, University of Melbourne, Australia}{Research Intern}{}{}{Developed machine learning and signal processing algorithms for charaterizing epileptogenic mutations based on multi-electrode array (MEA) recordings acquired from in-vitro neuronal networks. }
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Publications}
-
-\newbibliography{selected_pubs}
-\nocite{selected_pubs}{*}
-\bibliographystyle{selected_pubs}{plainyrrev}
-\bibliography{selected_pubs}{selected_pubs}
-{\large \textsc{Refereed Conference Publications}}
-
-% \subsection{In Conference Proceedings}
-% \newbibliography{conference}
-% \nocite{conference}{*}
-% \bibliographystyle{conference}{plainyrrev}
-% \bibliography{conference}{conference}
-% {\large \textsc{Refereed Conference Publications}}
-
-% \subsection{Journal Articles}
-% \newbibliography{journals}
-% \nocite{journals}{*}
-% \bibliographystyle{journals}{plainyrrev}
-% \bibliography{journals}{journals}
-% {\large \textsc{Refereed Conference Publications}}
-
-\subsection{Preprints}
-\newbibliography{preprints}
-\nocite{preprints}{*}
-\bibliographystyle{preprints}{plainyrrev}
-\bibliography{preprints}{preprints}
-{\large \textsc{Refereed Conference Publications}}
-
-% \subsection{Workshop Papers}
-% \newbibliography{workshop_papers}
-% \nocite{workshop_papers}{*}
-% \bibliographystyle{workshop_papers}{plainyrrev}
-% \bibliography{workshop_papers}{workshop_papers}
-% {\large \textsc{Refereed Conference Publications}}
-
-% \subsection{Theses}
-% \newbibliography{theses}
-% \nocite{theses}{*}
-% \bibliographystyle{theses}{plainyrrev}
-% \bibliography{theses}{theses}
-% {\large \textsc{Refereed Conference Publications}}
-
-%----------------------------------------------------------------------------------------
-%	RESEARCH EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{Research Experience}
-% \subsection{Johns Hopkins University, MD, USA}
-% \subsection{University of Moratuwa, Sri Lanka}
-% \subsection{Florey Institute of Neuroscience and Mental Health, University of Melbourne, Australia}
-% \subsection{Center for Advanced Imaging, University of Queensland, Australia}
-
-% \section{Research Experience}
-% \subsection{Indian Institute of Technology, ABC}
-% \cventry{June,2019 -- present}{\textit{Identifying Protein-protein Interaction from Biomedical text}}{}{}{}
-% {Developing a deep multi-modal architecture for accurately predicting protein interaction information from biomedical text. 
-% }
-% \cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
-
-% \cventry{July,2018 -- present}{\textit{Developing Deep Multi-modal Architecture for Biomedical Problems}}{}{}{}
-% {Analyzing different modalities of genes like gene expression profiles, protein 3D structure, underlying amino acid sequence using popular deep learning models to obtain deeper insight into the underlying biological system. 
-% }
-% \cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
-
-% \subsection{Indian Institute of Technology, XYZ}
-% \cventry{January,2015 -- Dec,2015}{\textit{Design and Synthesis of Reversible Multi-dimentional Nearest-Neighbour(NN) Quantum Circuit}}{}{}{}{Proposed an approach for designing and physically implementing of the multi-dimensional quantum circuits maintaining nearest-neighbor complacency that use minimal number of SWAP gates.}
-% \cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
+    % \section{Summary}
+    %     \begin{onecolentry}
+    %         \begin{justify}
+    %             Ph.D. candidate in Biomedical Engineering with expertise in statistical machine learning and deep learning, focused on developing robust models for out-of-distribution generalization and continual learning. Passionate about bridging artificial and natural intelligence. My work spans applications in large language models, biomedical data, and computer vision.
+    %         \end{justify}
+    %     \end{onecolentry}
 
 
-% \cventry{2012 -- 2013}{\textit{Text Document Clustering with Semantic Similarity through Wordnet}}{}{}{}{Improvement of the text document clustering task over conventional methods by introducing WORDNET and some better clustering algorithms.}
-% \cvitem{Advisor :}{\textbf{Dr. abc xyz}, \textit{Associate Professor, Department of Computer Science \& Engineering}, IIT abc ({\Colorhref{https://www.personal_webpage.com/} {\textit{Personal Web-page}}})}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Education
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	Fellowships \& Awards
-%----------------------------------------------------------------------------------------
+    \section{Education}
 
-% \section{Fellowships \& Awards}
+        \begin{threecolentry}{Ph.D.}{Aug 2021 -- Present}
+        \textbf{Johns Hopkins University} | Baltimore, MD | Biomedical Engineering \\
+        MINDS Fellowship (2024) \\
+        Advisors: Joshua T. Vogelstein, Pratik Chaudhari, Carey E. Priebe \\
+        \textit{Highlighted Courses}: Probability, Statistical Theory, High-Dimensional Approximation, Machine Learning, Optimal Transport, Probabilistic Models of Visual Cortex, Compressed Sensing and Sparse Recovery, Neuroscience and Cognition \\
+        GPA: 3.97/4.00
+        \end{threecolentry}
 
-% \cvitem{2016 --present}{\textit{\textbf{Visvesvaraya Fellowship}} of Ministry of Electronics and Information Technology (MeitY), Government of India, as a PhD research scholar in Indian Institute of Technology Patna.}
-% \cvitem{2019}{Receipt of \textit{\textbf{Visvesvaraya Travel Grant}} to attend a international conference \textbf{\textit{IEEE Congress on Evolutionary Computation, 2019}} in Wellington, New Zealand.}
-% \cvitem{2018}{Recipient of \textit{\textbf{SciGenome Research Foundation (SGRF) GYAN Scholarship}} to participate \textbf{\textit{Nextgen Genomics, Biology, Bioinformatics and Technologies-2018}} meeting at Jaipur India from $30^{th}$ September to $2^{nd}$ October 2018. }
-% \cvitem{2015}{Awarded under \textit{\textbf{Students Reward Programme}} at the Annual General Meeting of \textbf{Global Alumni Association of Bengal Engineering and Science University(GAABESU).}}
+        \vspace{0.20 cm}
 
-%----------------------------------------------------------------------------------------
-%	Academic achievements
-%----------------------------------------------------------------------------------------
+        \begin{threecolentry}{M.S.E.}{Aug 2021 -- May 2024}
+        \textbf{Johns Hopkins University} | Baltimore, MD | Applied Mathematics and Statistics \\
+        Focus Area: Statistics and Statistical Learning \\
+        GPA: 3.97/4.00
+        \end{threecolentry}
 
-\section{Academic Achievements \& Recognitions }
+        \vspace{0.20 cm}
 
-\cvitem{2026}{\textbf{Best Student Paper Award} at the 18th Annual Conference on Artificial General Intelligence (AGI-25), Reykjavík, Iceland}
-\cvitem{2025}{\textbf{Member, Alpha Eta Mu Beta (AEMB) – National Biomedical Engineering Honor Society} Invited for membership in recognition of academic excellence, ranking in the top third of the Biomedical Engineering PhD class.}
-\cvitem{2024}{\textbf{MINDS Fellowship} selected as a fellow of the Mathematical Institute of Data Science, Johns Hopkins University}
-\cvitem{2023}{\textbf{Johns Hopkins School of Medicine Student Spotlight} for research and academic accomplishments}
-\cvitem{2022}{\textbf{Best Paper Award} at the ECCV 2022 Workshop on Out-of-distribution Generalization in Computer Vision, Tel Aviv, Israel}
-\cvitem{2021}{\textbf{2nd Runners-up of the IEEE Video and Image Processing Cup} awarded at the International Conference on Image Processing (ICIP) 2021, Anchorage, Alaska, USA}
-\cvitem{2020}{\textbf{Prof. Pathuwathawithana Memorial Prize} for attaining the \emph{highest} GPA at the Faculty of Engineering, University of Moratuwa, Sri Lanka}
-\cvitem{2020}{\textbf{Gold Medal sponsored by Technomedics International Pvt Ltd} for the \emph{highest} overall academic performance in the Biomedical Engineering Stream (University of Moratuwa)}
-\cvitem{2020}{\textbf{National Finalists at the Migara Ranatunga Awards} awarded by Institution of Engineers, Sri Lanka (IESL) for the \emph{best} performance in the research internship}
-\cvitem{2019}{\textbf{World Finalists at the IEEE ComSoc Student Competition} ranked among \emph{the top 15 in the world}, received an Honorable Mention}
-\cvitem{2019}{\textbf{Merit Award at SLAAS Awards} awarded by Sri Lanka Association for the Advancement of Science (SLAAS) for the \emph{best undergraduate} project in the country}
-\cvitem{2019}{\textbf{National Finalists at the Sri Lankan IoT Challenge} ranked among \emph{the top 10 in the country}, received an Honorable Mention}
-\cvitem{2019}{\textbf{Runners-Up at the the National Inter-University Statistics Quiz Competition} Organized by University of Sri Jayawardenapura, Sri Lanka}
-\cvitem{2016}{\textbf{Dialog Merit Scholarship for Engineering Undergraduates} awarded by Dialog Axiata PLC for the students who excelled at the university entrance examinations at the national level (country rank: 10 out of $\sim$ 35,000 in the physical science stream)}
-\cvitem{2016}{\textbf{Mahapola Merit Scholarship for Engineering Undergraduates} awarded by the Government of Sri Lanka for the students who excelled at the university entrance examinations}
-\cvitem{2015}{\textbf{Darrel Medal} awarded by Richmond College, Sri Lanka for the most outstanding advanced level student.}
+        \begin{threecolentry}{B.Sc.}{Jan 2016 -- Jan 2020}
+        \textbf{University of Moratuwa} | Sri Lanka | Biomedical Engineering \\
+        Gold Medal for the Best Academic Performance, Dean's Honors List in every semester
+        Highlighted Courses: Real Analysis, Calculus, Differential Equations, Linear Algebra, Signals and Systems, Machine Vision, Data Structures and Algorithms \\
+        GPA: 4.09/4.20
+        \end{threecolentry}
 
-%----------------------------------------------------------------------------------------
-%	TEACHING SECTION
-%----------------------------------------------------------------------------------------
-\section{Selected Teaching Experience}
-\subsection{Teaching Assistant}
-\cventry{2025 Fall:}{EN.580.697 Biomedical Data Design}{}{JHU}{USA.}{}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Experience
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Research Experience}
 
-\subsection{Junior Lecturer}
-\cventry{2021 Fall:}{EN 1060 Signals and Systems}{}{UoM}{Sri Lanka}{}
-\cventry{2020 Fall:}{EN 2030 Laboratory Practice II}{}{UoM}{Sri Lanka}{}
-\cventry{2020 Spring:}{EN 3030 Circuits and Systems Design}{}{UoM}{Sri Lanka}{}
-\cventry{2020 Spring:}{BM 4111 Medical Electronics and Instrumentation}{}{UoM}{Sri Lanka}{}
-\cventry{2020 Fall:}{BM 2101 Analysis of Physiological Systems}{}{UoM}{Sri Lanka}{}
-\cventry{2020 Fall:}{BM 2011 Human Anatomy and Physiology}{}{UoM}{Sri Lanka}{}
-\cventry{2019 Fall:}{EN 1093 Laboratory Practice I}{}{UoM}{Sri Lanka}{}
-% \cventry{2018 Spring:}{DE 2410 Astronomy and Cosmology}{}{UoM}{Sri Lanka}{}
+        \begin{twocolentry}{Aug 2021 – Present}
+        \textbf{Graduate Research Assistant} | Johns Hopkins University | Baltimore, MD
+        \end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed \textit{prospective learning}, a first-principles mathematical framework that characterizes learning problems where the distributions of data, goals of the learner, and optimal hypotheses vary predictably over time.
+                \item Designed and implemented \textit{prospective} neural networks that significantly outperformed continual and online learning approaches on task sequences with predictable dynamics.
+                \item Extended prospective learning to sequential decision-making, and designed time-aware reinforcement learning algorithms that learn optimal foraging policies in non-stationary environments.
+                \item Discovered a counterintuitive phenomenon in domain adaptation, where the target risk can behave non-monotonically with respect to the amount of source (out-of-distribution) data in the training dataset.
+                \item Presented the work in top machine learning conferences, workshops, and journals (including NeurIPS, ICML, and TMLR), and won 2 best paper awards at AGI'25 and ECCV'22 workshop on OOD generalization in computer vision.
+            \end{highlights}
+        \end{onecolentry}
 
-\subsection{Visiting Lecturer}
-\cventry{2020 Spring:}{Workshop on MATLAB for signal/image processing, communication systems, and electronics}{}{Institute of Engineering Technology}{Sri Lanka}{}
+        \vspace{0.2 cm}
 
-%----------------------------------------------------------------------------------------
-%	Reviewing activities
-%----------------------------------------------------------------------------------------
+        \begin{twocolentry}{May 2025 – Sep 2025}
+        \textbf{Applied Scientist Intern} | Amazon Web Services (AWS) AI | Santa Clara, CA
+        \end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Interned with the Foundations Research Team (FRT) at AWS AI.
+                \item Designed and implemented adaptive context recomposition methods for multi-turn tool-using AI agents to eliminate redundant information and improve context efficiency. 
+                \item Achieved a $50 \%$ reduction in input token usage without compromising performance on mathematical reasoning and software engineering tasks.
+                \item Gained experience in AI agents, LLM reasoning, and LLM post-training approaches such as supervised fine-tuning and reinforcement learning (RL)-based fine-tuning (PPO and GRPO).
+            \end{highlights}
+        \end{onecolentry}
 
-\section{Reviewing Activities}
-\cvitem{}{\textbf{Reviewer} NeurIPS 2025, Conference on Language Models (COLM) 2025, Moratuwa Engineering Research Conference (MERCon) 2024}
+        \vspace{0.2 cm}
 
+        \begin{twocolentry}{Jun 2024 – Sep 2024}
+        \textbf{Applied Scientist Intern} | Amazon Web Services (AWS) AI | Santa Clara, CA
+        \end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Explored the use of state-space models (SSMs) for constrained text and program/code generation.
+                \item Gained hands-on experience with structured state-space models (including HiPPO, S4, Mamba, and Mamba-2), an emerging class of sequence models that serves as a potential alternative to the Transformer architecture.
+            \end{highlights}
+        \end{onecolentry}
 
-%----------------------------------------------------------------------------------------
-%	TECHNICAL SKILLS SECTION
-%----------------------------------------------------------------------------------------
+        \vspace{0.2 cm}
 
-\section{Technical skills}
+        \begin{twocolentry}{Jan 2020 – Aug 2021}
+        \textbf{Junior Lecturer} | University of Moratuwa | Sri Lanka
+        \end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Designed and implemented a novel model architecture combining CNNs and LSTMs for phase unwrapping in images, which outperformed contemporary approaches (published in ICASSP'21).
+                \item Developed computer vision algorithms to extract retinal and conjunctival biomarkers for diabetic retinopathy detection in collaboration with the University of Colombo Faculty of Medicine.
+                \item Advised an undergraduate project that developed a computer vision algorithm for in-bed human pose estimation (Second runner-up at the IEEE Video and Image Processing Cup 2021).
+                \item Conducted lectures and lab sessions in signals and systems, circuits and systems design, and analysis of physiological systems.
+            \end{highlights}
+        \end{onecolentry}
 
-\cvitem{}{\textit{Programming Languages}: Python, MATLAB, C/C++, Verilog HDL, \LaTeX}
-\cvitem{}{\textit{Frameworks}: PyTorch, PyG (PyTorch Geometric), Tensoflow, Keras, scikit-learn, ITK/VTK}
-\cvitem{}{\textit{Software}: Quartus, Multisim, AutoCAD, Altium, Solidworks}
-\cvitem{}{\textit{Hardware}: STM32 Family, Atmel AVR, Altera DE2, Raspberry Pi, Arduino}
-% \cvitem{Web Technologies}{HTML 5, PHP, JSP, Javascript}
-% \cvitem{Database}{SQL, MySQL, Apache, Neo4j}
+        \vspace{0.2 cm}
 
-%----------------------------------------------------------------------------------------
-%	SELECTED TALKS
-%----------------------------------------------------------------------------------------
+        \begin{twocolentry}{Jan 2019 – Jan 2020}
+        \textbf{Undergraduate Researcher} | University of Moratuwa | Sri Lanka
+        \end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Designed and implemented an online algorithm for recognizing hand gestures using forearm surface electromyography (sEMG) signals, which outperformed contemporary approaches (published in ICASSP'20).
+            \end{highlights}
+        \end{onecolentry}
 
-\section{Selected Talks}
+        \vspace{0.2 cm}
+        \begin{twocolentry}{Jun 2018 – Dec 2018}
+        \textbf{Research Assistant} | Florey Institute of Neuroscience and Mental Health | Australia\end{twocolentry}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Developed machine learning and signal processing algorithms for electrophysiological signal analysis, enabling large-scale data processing and biomarker extraction to quantify ion channel mutation effects in genetic epilepsy.
+                \item Deployed the algorithms as a MATLAB package to support epilepsy research within the lab.
+            \end{highlights}
+        \end{onecolentry}
 
-\cvitem{Dec. 2024}{\textit{Prospective Learning}, Center for Imaging Science (CIS) Retreat, Johns Hopkins University, MD, USA}
-\cvitem{Sep. 2022}{Critique on \textit{Invertible Neural Networks for Graph Predictions}, Theorinet Retreat, Simons Foundation, NY, USA}
-\cvitem{Oct. 2022}{\textit{The Value of Out-of-distribution Data}, ECCV 2022 workshop on Out-of-distribution Generalization in Computer Vision, Tel Aviv, Israel}
-% \cvitem{Jun. 2021}{\textit{A Joint Convolutional and Spatial Quad-Directional LSTM Network for Phase Unwrapping}, 46th International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Toronto, Canada}
-% \cvitem{Jun. 2020}{\textit{Real-time hand gesture recognition using temporal muscle activation maps of
-% multi-channel sEMG signals}, 45th International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Barcelona, Spain}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Technical Skills
+    % (Mirror the skills required by the job posting)
+    % Interpretability, Multi-Modal Learning, Representation Learning (check ChatGPT)
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	SELECTED POSTER PRESENTATIONS
-%----------------------------------------------------------------------------------------
+    \section{Technical Skills}
 
-\section{Selected Poster Presentations}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Machine Learning}: Supervised/Unsupervised Learning, Generative Modeling, Continual Learning, Domain Adaptation, Transfer Learning, Reinforcement Learning, Computer Vision
+            \item \textbf{Deep Learning}: Large Language Models (LLMs), Vision-Language Models (VLMs), Diffusion Models, State-Space Models (S4, Mamba)
+            \item \textbf{Programming}: Python, MATLAB, R, C++
+            \item \textbf{Libraries}: PyTorch, HuggingFace, vLLM, scikit-learn, TensorFlow, pandas, OpenCV
+            \item \textbf{Experiment Tracking}: Weights \& Biases, Hydra
+            \item \textbf{Software and Tools}: Linux, Git, AWS (EC2), \LaTeX
+        \end{highlights}
+    \end{onecolentry}
 
-\cvitem{Jul. 2025}{\textit{Prospective Learning: Learning for a Dynamic Future}, NeuroAI 2025, Allen Institute, Seattle, WA, USA}
-\cvitem{Apr. 2025}{\textit{Prospective Learning: Learning for a Dynamic Future}, Johns Hopkins Data Science and AI Institute Spring 2025 Symposium, Baltimore, MD, USA}
-\cvitem{Dec. 2024}{\textit{Prospective Learning: Learning for a Dynamic Future}, NeurIPS 2024 workshop on NeurIPS Workshop on NeuroAI: Fusing Neuroscience and AI for Intelligent Solutions, Vancouver, Canada}
-\cvitem{Sept. 2024}{\textit{Prospective Learning}, Mathematical and Scientific Foundations of Deep Learning Annual Meeting (MoDL), Simons Foundation, NY, USA}
-\cvitem{Dec. 2022}{\textit{The Value of Out-of-distribution Data}, NeurIPS 2022 Workshop on distribution shifts (DistShift), New Orleans, LA, USA}
-\cvitem{Apr. 2022}{\textit{Kernel Density Networks}, From Neuroscience to Artificially Intelligent Systems (NAISys), Cold Spring Harbor Laboratory, NY, USA}
-% \cvitem{Jun. 2021}{\textit{A Joint Convolutional and Spatial Quad-Directional LSTM Network for Phase Unwrapping}, 46th International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Toronto, Canada}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Publications
+    % Not strictly needed for Resume
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Selected Publications}
 
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL ACTIVITIES
-%----------------------------------------------------------------------------------------
+    \begingroup
+    \setlength{\itemsep}{0.5em}
+    \nocite{*}
+    \bibliographystyle{plainyrrev}
+    % \bibliography{selected_pubs}
+    \bibliography{pubs}
+    \endgroup
 
-% \section{Professional Activities}
-% \subsection{Organizing}
-% \cvitem{2021}{\textit{IEEE EMBS International Student Conference}, Moratuwa, Sri Lanka}
-% \cvitem{2018}{\textit{Workshop on Brain Computer Interfaces}, MerCon 2018, Moratuwa, Sri Lanka}
-% \cvitem{2017}{\textit{TechMedImpact Forum}, Sri Lanka}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Awards and Recognition
+    % Not strictly needed for Resume
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \subsection{Reviewing (Conferences)}
-% \cvitem{2021}{\textit{IEEE EMBS International Student Conference}, Moratuwa, Sri Lanka}
-% \cvitem{2021}{\textit{MerCon 2021}, Moratuwa, Sri Lanka}
+    \section{Selected Awards \& Recognition}
 
-%----------------------------------------------------------------------------------------
-%	SERVICES AND LEADERSHIP
-%----------------------------------------------------------------------------------------
+    % \begin{onecolentry}
+    %     \begin{highlights}  
+    %         \item Best Student Paper Award - 18th Annual Conference on Artificial General Intelligence (2025)
+    %         \item Member, Alpha Eta Mu Beta (AEMB) - National Biomedical Engineering Honor Society (2025)
+    %         \item Mathematical Institute for Data Science (MINDS) Fellowship, Johns Hopkins University (2024)
+    %         \item Johns Hopkins School of Medicine Student Spotlight (2023)
+    %         \item Best Paper Award, ECCV Workshop on Out-of-distribution Generalization in Computer Vision (2022)
+    %     \end{highlights}
+    % \end{onecolentry}
 
-\section{Services and Leadership}
-\cventry{2018-Present}{Richmond to University (R2U) Foundation}
-{Co-Founder}{}{}{
-  \begin{itemize}
-    \item An alumni-run organization aimed at organizing career guidance programs for the students of Richmond College, Sri Lanka
-  \end{itemize}
-}
+    \begin{onecolentry}
+        \begin{highlights}  
+            \item \textbf{Best Student Paper Award} -- 18th Annual Conference on Artificial General Intelligence (AGI-25), Reykjavík, Iceland (2026)
+            \item \textbf{Member, Alpha Eta Mu Beta (AEMB)} -- National Biomedical Engineering Honor Society. Invited for membership in recognition of academic excellence, ranking in the top third of the Biomedical Engineering PhD class (2025)
+            \item \textbf{MINDS Fellowship} -- Selected as a fellow of the Mathematical Institute of Data Science, Johns Hopkins University (2024)
+            \item \textbf{Johns Hopkins School of Medicine Student Spotlight} -- For research and academic accomplishments (2023)
+            \item \textbf{Best Paper Award} -- ECCV 2022 Workshop on Out-of-distribution Generalization in Computer Vision, Tel Aviv, Israel (2022)
+            \item \textbf{2nd Runners-up of the IEEE Video and Image Processing Cup} -- International Conference on Image Processing (ICIP) 2021, Anchorage, Alaska, USA (2021)
+            \item \textbf{Prof. Pathuwathawithana Memorial Prize} -- For attaining the \emph{highest} GPA at the Faculty of Engineering, University of Moratuwa, Sri Lanka (2020)
+            \item \textbf{Gold Medal} -- For the \emph{best} overall academic performance in the Biomedical Engineering Stream, University of Moratuwa (2020)
+            \item \textbf{National Finalists at the Migara Ranatunga Awards} -- Awarded by Institution of Engineers, Sri Lanka (IESL) for the \emph{best} performance in the research internship (2020)
+            \item \textbf{World Finalists at the IEEE ComSoc Student Competition} -- ranked among the top 15 in the world (2019)
+            \item \textbf{Merit Award at SLAAS Awards} -- Awarded by the Sri Lanka Association for the Advancement of Science (SLAAS) for the \emph{best} undergraduate project (2019)
+            \item \textbf{National Finalists at the Sri Lankan IoT Challenge} -- Ranked among the top 10 in the country (2019)
+            \item \textbf{Runner-Up at the National Inter-University Statistics Quiz Competition} -- University of Sri Jayewardenapura, Sri Lanka (2019)
+            \item \textbf{Dialog Merit Scholarship for Engineering Undergraduates} -- Awarded by Dialog Axiata PLC for the students who excelled in the university entrance examinations at the national level (2016)
+            \item \textbf{Mahapola Merit Scholarship for Engineering Undergraduates} -- Awarded by the Government of Sri Lanka for the students who excelled at the university entrance examinations (2016)
+            \item \textbf{Darrel Medal} -- For the most outstanding advanced level student, Richmond College, Sri Lanka (2015)
+        \end{highlights}
+    \end{onecolentry}
 
-\cventry{2016-2020}{IEEE Engineering in Medicine and Biology Student Branch Chapter, University of Moratuwa}
-{Chairperson 2019/20, Vice Chairperson 2018/19, 2017/18}{}{}{
-  \begin{itemize}
-    \item Received the \textit{Most Outstanding EMB Student Branch Chapter Regional Award} for the term 2019/20 (Asia-Pacific region)
-    \item Received the \textit{IEEE Darrel Chong Award (Silver Category)} for the term 2019/20
-  \end{itemize}
-}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Teaching
+    % Not needed for Resume
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cventry{2016-2017}{Mathematics Society, University of Moratuwa}
-{Assistant Secretary 2016/17}{}{}{}
+    \section{Teaching Experience}
 
-\section{Other}
-\cvitem{Legal Name}{Laknath Ashwin De Silva Kariyawasam Gonapinuwala Gamage}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item EN.580.697 Biomedical Data Design, Johns Hopkins University, USA (Fall 2025)
+            \item EN 1060 Signals and Systems, University of Moratuwa, Sri Lanka (Fall 2021)
+            % \item EN 2030 Laboratory Practice II, University of Moratuwa, Sri Lanka (Fall 2020)
+            \item EN 3030 Circuits and Systems Design, University of Moratuwa, Sri Lanka (Spring 2020)
+            \item BM 4111 Medical Electronics and Instrumentation, University of Moratuwa, Sri Lanka (Spring 2020)
+            \item BM 2101 Analysis of Physiological Systems, University of Moratuwa, Sri Lanka (Fall 2020)
+            \item BM 2011 Human Anatomy and Physiology, University of Moratuwa, Sri Lanka (Fall 2020)
+            % \item EN 1093 Laboratory Practice I, University of Moratuwa, Sri Lanka (Fall 2019)
+        \end{highlights}
+    \end{onecolentry}
 
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Reviewing
+    % Not needed for Resume
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+    \section{Reviewing Activities}
 
-%----------------------------------------------------------------------------------------
-%	Position of Responsibility SECTION
-%----------------------------------------------------------------------------------------
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textbf{Reviewer}: NeurIPS 2025, Conference on Language Models (COLM) 2025, Moratuwa Engineering Research Conference (MERCon) 2024
+        \end{highlights}
+    \end{onecolentry}
 
-% \section{Position of Responsibility}
-% \cventry{2016-2020}{Executive member of IEEE Student Branch}{}{IIT ABC}{}{}
-% \cventry{April 1-5, 2019}{Organizer, GIAN Workshop on subjects}{}{IIT ABC}{}{}
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Talks
+    % Not needed for Resume
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+    \section{Selected Talks}
 
-% \section{Referees}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textit{Prospective Learning}, Center for Imaging Science (CIS) Retreat, Johns Hopkins University, MD, USA (Dec. 2024)
+            \item Critique on \textit{Invertible Neural Networks for Graph Predictions}, Theorinet Retreat, Simons Foundation, NY, USA (Sep. 2022)
+            \item \textit{The Value of Out-of-distribution Data}, ECCV 2022 workshop on Out-of-distribution Generalization in Computer Vision, Tel Aviv, Israel (Oct. 2022)
+        \end{highlights}
+    \end{onecolentry}
 
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Posters
+    % Not needed for Resume
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \begin{tabular}{lr}
-% % Referee 1
-% \begin{minipage}[t]{3in}
-% \textbf{Dr. XXXXX XXXXX}\\
-% \textit{Associate Professor, Department of} \\
-% \textit{Computer Science \& Engineering}\\
-% Institute name\\
-% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
-% \end{minipage}
-% &
-% % Referee 2
-% \begin{minipage}[t]{3in}
-% \textbf{Dr. XXXXX XXXXX}\\
-% \textit{Associate Professor, Department of} \\
-% \textit{Computer Science \& Engineering}\\
-% Institute name\\
-% \Telefon\ +(601) 877-6236\\
-% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
-% \end{minipage}
-% \\
-% \\ % Additional newline for spacing.
-% % Referee 3
-% \begin{minipage}[t]{3in}
-% \textbf{Dr. XXXXX XXXXX}\\
-% \textit{Associate Professor, Department of} \\
-% \textit{Computer Science \& Engineering}\\
-% Institute name\\
-% \Telefon\ +(601) 877-6236\\
-% \Letter\ \href{mailto:abc@gmail.com}{abc@gmail.com}
-% \end{minipage}
-% &
-% \\
-% \end{tabular}
+    \section{Selected Poster Presentations}
 
+    \begin{onecolentry}
+        \begin{highlights}
+            \item \textit{Prospective Learning: Learning for a Dynamic Future}, NeuroAI 2025, Allen Institute, Seattle, WA, USA (Jul. 2025)
+            \item \textit{Prospective Learning: Learning for a Dynamic Future}, Johns Hopkins Data Science and AI Institute Spring 2025 Symposium, Baltimore, MD, USA (Apr. 2025)
+            \item \textit{Prospective Learning: Learning for a Dynamic Future}, NeurIPS 2024 Workshop on NeuroAI: Fusing Neuroscience and AI for Intelligent Solutions, Vancouver, Canada (Dec. 2024)
+            \item \textit{Prospective Learning}, Mathematical and Scientific Foundations of Deep Learning Annual Meeting (MoDL), Simons Foundation, NY, USA (Sep. 2024)
+            \item \textit{The Value of Out-of-distribution Data}, NeurIPS 2022 Workshop on distribution shifts (DistShift), New Orleans, LA, USA (Dec. 2022)
+            \item \textit{Kernel Density Networks}, From Neuroscience to Artificially Intelligent Systems (NAISys), Cold Spring Harbor Laboratory, NY, USA (Apr. 2022)
+        \end{highlights}
+    \end{onecolentry}
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Outreach
+    % Not needed for Resume
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    \section{Outreach}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{2024}
+    \textbf{Mentor} | Johns Hopkins BMEAAP | Baltimore, MD
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Mentored and supported prospective PhD students in biomedical engineering, providing guidance on research pathways and academic preparation.
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{2018 -- Present}
+    \textbf{Co-Founder} | Richmond to University (R2U) | Sri Lanka
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item An alumni-run organization aimed at organizing career guidance programs for the students of Richmond College, Sri Lanka.
+        \end{highlights}
+    \end{onecolentry}
+
+    \vspace{0.2 cm}
+
+    \begin{twocolentry}{2019 -- 2020}
+    \textbf{Chairperson} | IEEE EMBS Student Branch Chapter, University of Moratuwa | Sri Lanka
+    \end{twocolentry}
+    \vspace{0.10 cm}
+    \begin{onecolentry}
+        \begin{highlights}
+            \item Received the \textit{Most Outstanding EMB Student Branch Chapter Regional Award} for the term 2019/20 (Asia-Pacific region).
+            \item Received the \textit{IEEE Darrel Chong Award (Silver Category)} for the term 2019/20.
+        \end{highlights}
+    \end{onecolentry}
 
 \end{document}
