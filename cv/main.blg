@@ -7,7 +7,7 @@ Warning--can't use both volume and number fields in math12050746
 Warning--empty journal in de2021thickness
 You've used 12 entries,
             2152 wiz_defined-function locations,
-            561 strings with 6902 characters,
+            562 strings with 6952 characters,
 and the built_in function-call counts, 4583 in all, are:
 = -- 376
 > -- 382

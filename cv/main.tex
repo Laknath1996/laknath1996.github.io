@@ -3,8 +3,8 @@
 % Packages:
 \usepackage[
     ignoreheadfoot, % set margins without considering header and footer
-    top=1.5 cm, % seperation between body and page edge from the top
-    bottom=1.5 cm, % seperation between body and page edge from the bottom
+    top=1.4 cm, % seperation between body and page edge from the top
+    bottom=1.4 cm, % seperation between body and page edge from the bottom
     left=1.5 cm, % seperation between body and page edge from the left
     right=1.5 cm, % seperation between body and page edge from the right
     footskip=1.0 cm, % seperation between body and footer
@@ -32,7 +32,7 @@
 \usepackage{changepage} % for one column entries (adjustwidth environment)
 \usepackage{paracol} % for two and three column entries
 \usepackage{ifthen} % for conditional statements
-\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{needspace} % for avoiding page break right after the section title
 \usepackage{iftex} % check if engine is pdflatex, xetex or luatex
 \usepackage{ragged2e}
 
@@ -54,7 +54,7 @@
 \setcounter{secnumdepth}{0} % no section numbering
 \setlength{\parindent}{0pt} % no indentation
 \setlength{\topskip}{0pt} % no top skip
-\setlength{\columnsep}{0.15cm} % set column seperation
+\setlength{\columnsep}{0.15cm} % set column separation
 \pagenumbering{gobble} % no page numbering
 
 \titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
@@ -112,7 +112,7 @@
     \setcolumnwidth{\fill, 4.5 cm}
     \begin{paracol}{2}
 }{
-    \switchcolumn \raggedleft \secondColumn
+    \switchcolumn \raggedleft \secondColumn\strut
     \end{paracol}
     \endonecolentry
 } % new environment for two column entries
@@ -130,7 +130,7 @@
 } % new environment for three column entries
 
 \newenvironment{header}{
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.25}
 }{
     \par\kern\topsep
 } % new environment for the header
@@ -238,7 +238,7 @@
                 \item Designed and implemented \textit{prospective} neural networks that significantly outperformed continual and online learning approaches on task sequences with predictable dynamics.
                 \item Extended prospective learning to sequential decision-making, and designed time-aware reinforcement learning algorithms that learn optimal foraging policies in non-stationary environments.
                 \item Discovered a counterintuitive phenomenon in domain adaptation, where the target risk can behave non-monotonically with respect to the amount of source (out-of-distribution) data in the training dataset.
-                \item Presented the work in top machine learning conferences, workshops, and journals (including NeurIPS, ICML, and TMLR), and won 2 best paper awards at AGI'25 and ECCV'22 workshop on OOD generalization in computer vision.
+                \item Presented this work at top machine learning conferences, workshops, and journals (including NeurIPS, ICML, and TMLR), and won two best paper awards at AGI'25 and the ECCV'22 workshop on OOD generalization in computer vision.
             \end{highlights}
         \end{onecolentry}
 
@@ -318,11 +318,13 @@
 
     \begin{onecolentry}
         \begin{highlights}
-            \item \textbf{Machine Learning}: Supervised/Unsupervised Learning, Generative Modeling, Continual Learning, Domain Adaptation, Transfer Learning, Reinforcement Learning, Computer Vision
-            \item \textbf{Deep Learning}: Large Language Models (LLMs), Vision-Language Models (VLMs), Diffusion Models, State-Space Models (S4, Mamba)
+            \item \textbf{Machine Learning}: Supervised/Unsupervised/Self-supervised Learning, Generative Modeling, Continual Learning, Domain Adaptation, Transfer Learning, Computer Vision, Reinforcement Learning, Time-series Forecasting
+            \item \textbf{Deep Learning}: Large Language Models (LLMs), Vision-Language Models (VLMs), Diffusion Models, GANs, VAEs, State-Space Models (S4, Mamba, etc.)
+            \item \textbf{Large Language Models}: Pre-training, Fine-tuning (LoRA, DPO, PPO, GRPO), Retrieval-Augmented Generation (RAG), LLM Agents
+            \item \textbf{Signal Processing}: Kalman Filtering, Sparse Recovery, Compressed Sensing, Filter Design
             \item \textbf{Programming}: Python, MATLAB, R, C++
-            \item \textbf{Libraries}: PyTorch, HuggingFace, vLLM, scikit-learn, TensorFlow, pandas, OpenCV
-            \item \textbf{Experiment Tracking}: Weights \& Biases, Hydra
+            \item \textbf{Libraries}: PyTorch, HuggingFace, vLLM, LangChain, Chroma, Scikit-learn, TensorFlow, Pandas, OpenCV, Weights \& Biases, Hydra
+            % \item \textbf{Experiment Tracking}: Weights \& Biases, Hydra
             \item \textbf{Software and Tools}: Linux, Git, AWS (EC2), \LaTeX
         \end{highlights}
     \end{onecolentry}
@@ -366,7 +368,7 @@
             \item \textbf{MINDS Fellowship} -- Selected as a fellow of the Mathematical Institute of Data Science, Johns Hopkins University (2024)
             \item \textbf{Johns Hopkins School of Medicine Student Spotlight} -- For research and academic accomplishments (2023)
             \item \textbf{Best Paper Award} -- ECCV 2022 Workshop on Out-of-distribution Generalization in Computer Vision, Tel Aviv, Israel (2022)
-            \item \textbf{2nd Runners-up of the IEEE Video and Image Processing Cup} -- International Conference on Image Processing (ICIP) 2021, Anchorage, Alaska, USA (2021)
+            \item \textbf{Second runner-up, IEEE Video and Image Processing Cup} -- International Conference on Image Processing (ICIP) 2021, Anchorage, Alaska, USA (2021)
             \item \textbf{Prof. Pathuwathawithana Memorial Prize} -- For attaining the \emph{highest} GPA at the Faculty of Engineering, University of Moratuwa, Sri Lanka (2020)
             \item \textbf{Gold Medal} -- For the \emph{best} overall academic performance in the Biomedical Engineering Stream, University of Moratuwa (2020)
             \item \textbf{National Finalists at the Migara Ranatunga Awards} -- Awarded by Institution of Engineers, Sri Lanka (IESL) for the \emph{best} performance in the research internship (2020)
