@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1761572527 "main.aux" "main.bbl" "main" 1761572528
+["bibtex main"] 1771606545 "main.aux" "main.bbl" "main" 1771606546
   "./plainyrrev.bst" 1761572521 22333 c27153923fd6906cd6d21fdd36930a35 ""
-  "main.aux" 1761572528 4549 c4e85e2ef170f89d7eaeae86e2cd1a47 "pdflatex"
-  "pubs.bib" 1761572448 4727 a458fa17a3be5d5de3d2f5852f4a60bd ""
+  "main.aux" 1771606546 4549 0448dde4d09b3399c4405d852c5773c9 "pdflatex"
+  "pubs.bib" 1771606545 4773 41ee3b1354757f8d1c53e477c41d1a69 ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1761572527 "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" "main.pdf" "main" 1761572528
-  "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" 1761572525 22881 b03f25ea32e152117c9fbaa6cc7065a8 ""
+["pdflatex"] 1771606545 "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" "main.pdf" "main" 1771606546
+  "/Users/ashwindesilva/personal website/laknath1996.github.io/cv/main.tex" 1771606534 23261 27ed9b372befd5c6ade64e3a0523496a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
@@ -124,9 +124,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649776656 2826453 2ebe4d28fee2a90f9054f92f6f9e874f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "main.aux" 1761572528 4549 c4e85e2ef170f89d7eaeae86e2cd1a47 "pdflatex"
-  "main.bbl" 1761572527 3346 988cd43255330a63a5195c9582bb6bb5 "bibtex main"
-  "main.tex" 1761572525 22881 b03f25ea32e152117c9fbaa6cc7065a8 ""
+  "main.aux" 1771606546 4549 0448dde4d09b3399c4405d852c5773c9 "pdflatex"
+  "main.bbl" 1771606545 3392 31a728aa52c1df094e918cd047b8f0a5 "bibtex main"
+  "main.tex" 1771606534 23261 27ed9b372befd5c6ade64e3a0523496a ""
   (generated)
   "main.aux"
   "main.log"
