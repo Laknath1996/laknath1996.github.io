@@ -1,0 +1,9 @@
+---
+layout: base.njk
+title: Publications
+permalink: /publications/
+---
+<h1>Publications</h1>
+<p>Also on <a href="{{ site.links[0].url }}">Google Scholar</a>.</p>
+{% set pubs = publications %}
+{% include "pub-list.njk" %}

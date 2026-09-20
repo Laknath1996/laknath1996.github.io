@@ -1,0 +1,3 @@
+<ul class="plain">
+{% for n in (newsItems or (news | head(5))) %}<li><span class="when">{{ n.date }}</span> {{ n.text | safe }}</li>{% endfor %}
+</ul>

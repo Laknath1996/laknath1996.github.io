@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+<article>
+  <h1>{{ title }}</h1>
+  <p class="tagline"><time datetime="{{ date | niceDate }}">{{ date | niceDate }}</time></p>
+  {{ content | safe }}
+</article>
+<p class="more"><a href="/blog/">&larr; all posts</a></p>

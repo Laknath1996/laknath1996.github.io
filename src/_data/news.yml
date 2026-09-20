@@ -1,0 +1,12 @@
+# Newest first. Add new items at the top. Only the latest 5 show on the home page;
+# all of them show on /news/. Markdown links are NOT processed here; plain HTML <a> is fine.
+- {date: Jan 2026, text: "Optimal control of the future via prospective learning with control accepted to L4DC 2026."}
+- {date: Oct 2025, text: "Prospective Learning in Retrospect won the student best paper award at AGI 2025."}
+- {date: Jul 2025, text: "Presented a poster at the NeuroAI conference (Allen Institute, Seattle)."}
+- {date: Jun 2025, text: "Prospective Learning in Retrospect accepted to AGI 2025 (oral)."}
+- {date: Jun 2025, text: "Simple Calibration via Geodesic Kernels accepted to TMLR."}
+- {date: May 2025, text: "Summer internship at Amazon (Foundational AI Research team)."}
+- {date: Apr 2025, text: "Poster at the Johns Hopkins Data Science and AI Institute Spring Symposium."}
+- {date: Dec 2024, text: "Talk at the Center for Imaging Science Retreat."}
+- {date: Nov 2024, text: "Attended DeepMath 2024."}
+- {date: Aug 2024, text: "Prospective Learning accepted to NeurIPS 2024."}

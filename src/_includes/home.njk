@@ -1,0 +1,26 @@
+---
+layout: base.njk
+---
+<img class="headshot" src="/assets/headshot.jpg" alt="Photo of {{ site.name }}" width="200" height="211">
+<h1>{{ site.name }}</h1>
+<p class="tagline">{{ site.tagline }}</p>
+{{ content | safe }}
+
+<h2>Recent news</h2>
+{% include "news-list.njk" %}
+<p class="more"><a href="/news/">all news &rarr;</a></p>
+
+<h2>Selected awards</h2>
+<ul class="plain">
+{% for a in awards %}<li><span class="when">{{ a.year }}</span> {{ a.text }}</li>{% endfor %}
+</ul>
+
+<h2>Selected publications</h2>
+{% set pubs = publications | selectattr("selected") %}
+{% include "pub-list.njk" %}
+<p class="more"><a href="/publications/">all publications &rarr;</a></p>
+
+<h2>Teaching</h2>
+<ul class="plain">
+{% for t in teaching %}<li><span class="when">{{ t.term }}</span> {{ t.text }}</li>{% endfor %}
+</ul>

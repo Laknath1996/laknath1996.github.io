@@ -1,0 +1,31 @@
+# Newest first. `selected: true` puts a paper on the home page; all appear on /publications/.
+# `links` is a free-form map of label -> url.
+- title: "Prospective Learning: Learning for a Dynamic Future"
+  authors: "Ashwin De Silva, Rahul Ramesh, Rubing Yang, Siyu Yu, Pratik Chaudhari, Joshua T. Vogelstein"
+  venue: "NeurIPS 2025"
+  selected: true
+  links: {pdf: "https://arxiv.org/pdf/2411.00109"}
+
+- title: "Simple Calibration via Geodesic Kernels"
+  authors: "Jayanta Dey, Haoyin Xu, Ashwin De Silva, Joshua T. Vogelstein"
+  venue: "TMLR 2025"
+  selected: true
+  links: {pdf: "https://openreview.net/pdf?id=dpcRp8ix5T"}
+
+- title: "The Value of Out-of-Distribution Data"
+  authors: "Ashwin De Silva, Rahul Ramesh, Carey E. Priebe, Pratik Chaudhari, Joshua T. Vogelstein"
+  venue: "ICML 2023"
+  selected: true
+  links: {pdf: "https://proceedings.mlr.press/v202/de-silva23a/de-silva23a.pdf"}
+
+- title: "A Joint Convolutional and Spatial Quad-Directional LSTM Network for Phase Unwrapping"
+  authors: "Malsha V. Perera, Ashwin De Silva"
+  venue: "ICASSP 2021"
+  selected: true
+  links: {pdf: "https://arxiv.org/pdf/2010.13268"}
+
+- title: "Real-time Hand Gesture Recognition Using Temporal Muscle Activation Maps of Multi-channel sEMG Signals"
+  authors: "Ashwin De Silva, Malsha V. Perera, Kithmin Wickramasinghe, Asma M. Naim, Thilina Dulantha Lalitharatne, Simon L. Kappel"
+  venue: "ICASSP 2020"
+  selected: true
+  links: {pdf: "https://arxiv.org/pdf/2002.03159"}

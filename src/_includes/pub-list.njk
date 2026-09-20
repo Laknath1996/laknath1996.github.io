@@ -1,0 +1,9 @@
+<ol class="pubs">
+{% for p in pubs %}
+  <li>
+    <span class="title">{{ p.title }}</span><br>
+    {{ p.authors | boldMe | safe }}<br>
+    <em>{{ p.venue }}</em>{% for label, url in p.links %} [<a href="{{ url }}">{{ label }}</a>]{% endfor %}
+  </li>
+{% endfor %}
+</ol>
