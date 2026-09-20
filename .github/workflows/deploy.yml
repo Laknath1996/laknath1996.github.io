@@ -1,0 +1,57 @@
+name: Deploy site
+
+on:
+  push: {branches: [main]}
+  repository_dispatch: {types: [cv-updated]}   # sent by the CV repo when Overleaf pushes
+  schedule: [{cron: "17 5 * * *"}]             # nightly safety net
+  workflow_dispatch:
+
+permissions: {contents: read, pages: write, id-token: write}
+concurrency: {group: pages, cancel-in-progress: true}
+
+env:
+  CV_REPO: Laknath1996/ashwin-vitae     # GitHub repo that Overleaf syncs to
+  CV_TEX: main.tex            # root file in that repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check out CV repo
+        id: cvco
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.CV_REPO }}
+          path: cv-src
+          # token: ${{ secrets.CV_REPO_TOKEN }}   # uncomment if the CV repo is private
+
+      - name: Compile CV
+        if: steps.cvco.outcome == 'success'
+        continue-on-error: true
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: ${{ env.CV_TEX }}
+          working_directory: cv-src
+
+      - name: Copy CV PDF into site
+        run: |
+          pdf="cv-src/${CV_TEX%.tex}.pdf"
+          if [ -f "$pdf" ]; then cp "$pdf" src/cv.pdf; else echo "::warning::No compiled CV found; /cv.pdf will be missing"; fi
+
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: _site}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: {name: github-pages, url: "${{ steps.d.outputs.page_url }}"}
+    steps:
+      - id: d
+        uses: actions/deploy-pages@v4
