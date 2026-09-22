@@ -1,9 +1,9 @@
 ---
-title: Hello, math
+title: Test!
 date: 2026-09-20
 math: true
 ---
-Inline math like $e^{i\pi} + 1 = 0$ and display math both work; they are rendered to HTML at build time, so no JavaScript is needed.
+This is only a test. More to come.
 
 $$\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}$$
 
