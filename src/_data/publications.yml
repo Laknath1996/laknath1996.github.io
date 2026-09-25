@@ -1,10 +1,15 @@
 # Newest first. `selected: true` puts a paper on the home page; all appear on /publications/.
-# `links` is a free-form map of label -> url.
-- title: "Prospective Learning: Learning for a Dynamic Future"
-  authors: "Ashwin De Silva, Rahul Ramesh, Rubing Yang, Siyu Yu, Pratik Chaudhari, Joshua T. Vogelstein"
-  venue: "NeurIPS 2025"
+# `links` is a free-form map of label -> url. Sourced from the .bib file (2026-09-24).
+
+- title: "Optimal Control of the Future via Prospective Foraging"
+  authors: "Yuxin Bai, Aranyak Acharyya, Ashwin De Silva, Zeyu Shen, James Hasset, Joshua T. Vogelstein"
+  venue: "L4DC 2026"
   selected: true
-  links: {pdf: "https://arxiv.org/pdf/2411.00109"}
+
+- title: "Prospective Learning in Retrospect"
+  authors: "Yuxin Bai, Cecelia Shuai, Ashwin De Silva, Siyu Yu, Pratik Chaudhari, Joshua Vogelstein"
+  venue: "AGI 2025"
+  selected: false
 
 - title: "Simple Calibration via Geodesic Kernels"
   authors: "Jayanta Dey, Haoyin Xu, Ashwin De Silva, Joshua T. Vogelstein"
@@ -12,20 +17,52 @@
   selected: true
   links: {pdf: "https://openreview.net/pdf?id=dpcRp8ix5T"}
 
+- title: "Prospective Learning: Learning for a Dynamic Future"
+  authors: "Ashwin De Silva, Rahul Ramesh, Rubing Yang, Siyu Yu, Pratik Chaudhari, Joshua T. Vogelstein"
+  venue: "NeurIPS 2024"
+  selected: true
+  links: {pdf: "https://arxiv.org/pdf/2411.00109"}
+
+- title: "Approximately Optimal Domain Adaptation with Fisher's Linear Discriminant"
+  authors: "Hayden Helm, Ashwin De Silva, Joshua T. Vogelstein, Carey E. Priebe, Weiwei Yang"
+  venue: "Mathematics 12(5):746, 2024"
+  selected: false
+  links: {paper: "https://www.mdpi.com/2227-7390/12/5/746"}
+
+- title: "Prospective Learning: Principled Exploration to the Future"
+  authors: "Ashwin De Silva, Rahul Ramesh, Pratik Chaudhari, Joshua T. Vogelstein"
+  venue: "CoLLAs 2023"
+  selected: false
+
 - title: "The Value of Out-of-Distribution Data"
   authors: "Ashwin De Silva, Rahul Ramesh, Carey E. Priebe, Pratik Chaudhari, Joshua T. Vogelstein"
   venue: "ICML 2023"
   selected: true
   links: {pdf: "https://proceedings.mlr.press/v202/de-silva23a/de-silva23a.pdf"}
 
+- title: "Towards Accurate Cross-Domain In-Bed Human Pose Estimation"
+  authors: "Mohamed Afham, Udith Haputhanthri, Jathurshan Pradeepkumar, Mithunjha Anandakumar, Ashwin De Silva, Chamira U.S. Edussooriya"
+  venue: "ICASSP 2022"
+  selected: false
+
 - title: "A Joint Convolutional and Spatial Quad-Directional LSTM Network for Phase Unwrapping"
   authors: "Malsha V. Perera, Ashwin De Silva"
   venue: "ICASSP 2021"
-  selected: true
+  selected: false
   links: {pdf: "https://arxiv.org/pdf/2010.13268"}
+
+- title: "A Thickness Sensitive Vessel Extraction Framework for Retinal and Conjunctival Vascular Tortuosity Analysis"
+  authors: "Ashwin De Silva, Malsha V. Perera, Navodini Wijethilake, Saroj Jayasinghe, Nuwan D. Nanayakkara, Anjula De Silva"
+  venue: "arXiv preprint, 2021"
+  selected: false
+
+- title: "Low-cost Active Dry-contact Surface EMG Sensor for Bionic Arms"
+  authors: "Asma M. Naim, Kithmin Wickramasinghe, Ashwin De Silva, Malsha V. Perera, Thilina Dulantha Lalitharatne, Simon L. Kappel"
+  venue: "IEEE SMC 2020"
+  selected: false
 
 - title: "Real-time Hand Gesture Recognition Using Temporal Muscle Activation Maps of Multi-channel sEMG Signals"
   authors: "Ashwin De Silva, Malsha V. Perera, Kithmin Wickramasinghe, Asma M. Naim, Thilina Dulantha Lalitharatne, Simon L. Kappel"
   venue: "ICASSP 2020"
-  selected: true
+  selected: false
   links: {pdf: "https://arxiv.org/pdf/2002.03159"}
